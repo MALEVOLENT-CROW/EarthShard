@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,35 +7,62 @@ public class RockThrow : MonoBehaviour
 {
     private InputManager inputManager;
 
-    [SerializeField] private GameObject projectile;
-    [SerializeField] private GameObject rockThrower;
+    [SerializeField] private GameObject projectileGO;
+    private GameObject projectileInst;
+    private RockProjectile projectileProperties;
+    private Rigidbody projectileRB;
+
     [SerializeField] private float projectileForce = 10.0f;
+   
+    private bool spawned = false;
+
+    private Transform rockThrower;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        inputManager = GameObject.FindWithTag("Player").GetComponent<InputManager>();
 
+        rockThrower = GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (spawned == false && inputManager.player.ShootAlt.triggered)
+        {
+            spawnRock();
+        }
 
+        if (spawned == true && inputManager.player.Shoot.triggered)
+        {
+            shootRock();
+        }
     }
 
     private void spawnRock()
     {
-        if(projectile != null && rockThrower != null)
+        if (projectileGO != null && rockThrower != null)
         {
             Vector3 spawnPos;
 
-           // Instantiate(projectile,rockThrower,Quaternion.identity) ;
+            spawnPos = rockThrower.position;
+
+            GameObject projectile = Instantiate(projectileGO, spawnPos, Quaternion.identity);
+            projectileRB = projectile.GetComponent<Rigidbody>();
+            projectileProperties = projectile.GetComponent<RockProjectile>();
+            projectileProperties.held = true;
+            spawned = true;
+
         }
     }
 
     private void shootRock()
     {
+        projectileProperties.held = false;
+        projectileRB.AddForce(transform.forward * projectileForce);
 
+        spawned = false;
     }
 }

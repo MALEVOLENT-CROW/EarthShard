@@ -89,6 +89,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ShootAlt"",
+                    ""type"": ""Button"",
+                    ""id"": ""0af1ba63-cebd-4881-ab83-0d9c105b215c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -287,6 +296,28 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3ee5f433-7956-4790-9480-d36ecd1a111f"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShootAlt"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0634ca87-036c-466d-ba8c-8aa5413fd8c7"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShootAlt"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -868,6 +899,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
         m_Player_Reload = m_Player.FindAction("Reload", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
+        m_Player_ShootAlt = m_Player.FindAction("ShootAlt", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -952,6 +984,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Shoot;
     private readonly InputAction m_Player_Reload;
     private readonly InputAction m_Player_Sprint;
+    private readonly InputAction m_Player_ShootAlt;
     public struct PlayerActions
     {
         private @PlayerInput m_Wrapper;
@@ -963,6 +996,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
         public InputAction @Reload => m_Wrapper.m_Player_Reload;
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
+        public InputAction @ShootAlt => m_Wrapper.m_Player_ShootAlt;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -993,6 +1027,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Sprint.started += instance.OnSprint;
             @Sprint.performed += instance.OnSprint;
             @Sprint.canceled += instance.OnSprint;
+            @ShootAlt.started += instance.OnShootAlt;
+            @ShootAlt.performed += instance.OnShootAlt;
+            @ShootAlt.canceled += instance.OnShootAlt;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1018,6 +1055,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Sprint.started -= instance.OnSprint;
             @Sprint.performed -= instance.OnSprint;
             @Sprint.canceled -= instance.OnSprint;
+            @ShootAlt.started -= instance.OnShootAlt;
+            @ShootAlt.performed -= instance.OnShootAlt;
+            @ShootAlt.canceled -= instance.OnShootAlt;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1216,6 +1256,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         void OnShoot(InputAction.CallbackContext context);
         void OnReload(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
+        void OnShootAlt(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
