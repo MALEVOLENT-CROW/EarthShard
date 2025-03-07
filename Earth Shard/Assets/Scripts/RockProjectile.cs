@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class RockProjectile : MonoBehaviour
 {
     private Transform rockPos;
     [SerializeField] private Transform throwerPos;
+    [SerializeField] private GameObject impactEffect;
 
     public bool held;
 
@@ -18,7 +20,7 @@ public class RockProjectile : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (held)
+        if(held)
         {
             HoldRock();
         }
@@ -28,5 +30,16 @@ public class RockProjectile : MonoBehaviour
     {
         rockPos.position = throwerPos.position;
         rockPos.rotation = throwerPos.rotation;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(!held)
+        {
+            GameObject impactGO = Instantiate(impactEffect, transform.position, Quaternion.LookRotation(transform.position));
+            Destroy(impactGO, 2f);
+
+            Destroy(gameObject);
+        }
     }
 }
