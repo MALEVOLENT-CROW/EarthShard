@@ -20,7 +20,7 @@ public class RockProjectile : MonoBehaviour
 
     private void LateUpdate()
     {
-        if(held)
+        if (held)
         {
             HoldRock();
         }
@@ -34,7 +34,7 @@ public class RockProjectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(!held)
+        if (!held)
         {
             GameObject impactGO = Instantiate(impactEffect, transform.position, Quaternion.LookRotation(transform.position));
             Destroy(impactGO, 2f);
