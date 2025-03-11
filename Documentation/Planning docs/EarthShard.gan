@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-03-01" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3316" locale="en_GB">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Name" width="200" order="0"/>
+        <field id="tpd4" name="Begin date" width="75" order="1"/>
+        <field id="tpd5" name="End date" width="75" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[14]]></timeline>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="a964c0c868e5435e8f86a48a697cf7e2" name="Iteration 1" meeting="false" start="2025-03-03" duration="28" complete="49" expand="true">
+            <task id="19" uid="3a1de64de725406290916dd5492bec04" name="Documentation" meeting="false" start="2025-03-03" duration="10" complete="47" expand="true">
+                <task id="1" uid="dd7aac53919441b9856c7fd8671be0b7" name="Proposal Document" meeting="false" start="2025-03-03" duration="5" complete="95" expand="true"/>
+                <task id="2" uid="4ee1ae123fc549a4888b1a243b902adc" name="Pre-production report" meeting="false" start="2025-03-10" duration="5" complete="0" expand="true"/>
+            </task>
+            <task id="4" uid="17ad213f7aa24f578758319016669bb8" name="Game version 0.1.0-Alpha" meeting="false" start="2025-03-17" duration="18" complete="50" expand="true">
+                <task id="5" uid="a49c98f44f324e63b96bedec41c73b41" name="Basic player controls" meeting="false" start="2025-03-17" duration="2" complete="100" expand="true">
+                    <depend id="8" type="2" difference="0" hardness="Strong"/>
+                    <task id="6" uid="f92611efbbe34606bdeb5e93261b984e" name="Movement" meeting="false" start="2025-03-17" duration="2" complete="100" expand="true"/>
+                    <task id="7" uid="bd26dfcceb14468baff9f156c58142fe" name="Camera controls" meeting="false" start="2025-03-17" duration="2" complete="100" expand="true"/>
+                </task>
+                <task id="11" uid="ddba11be069248eca68d0efcccb129f1" name="Environmental assets" meeting="false" start="2025-03-17" duration="1" complete="100" expand="true">
+                    <depend id="12" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="15" uid="2e8707996aca43d1ab7f0d530e6cf274" name="SFX" meeting="false" start="2025-03-17" duration="1" complete="100" expand="true"/>
+                <task id="16" uid="64c2f3ebb8ce4bb79e53ec07ab1ee5c9" name="VFX" meeting="false" start="2025-03-17" duration="1" complete="100" expand="true"/>
+                <task id="20" uid="048085ab487d40aa806a48e953377826" name="Models" meeting="false" start="2025-03-18" duration="1" complete="50" expand="true">
+                    <task id="21" uid="009237bd740a47f68e0f3cc85602decd" name="Player arms model" meeting="false" start="2025-03-18" duration="1" complete="100" expand="true"/>
+                    <task id="22" uid="f9d969fdce3c401b87f79c86fbff7518" name="Enemy Model" meeting="false" start="2025-03-18" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="8" uid="85497164d7bb4550ae8946385ab878d1" name="Abilites" meeting="false" start="2025-03-19" duration="8" complete="37" expand="true">
+                    <task id="9" uid="28212a7699664c6e837a1ed62a4a49a6" name="Rock Throw" meeting="false" start="2025-03-19" duration="3" complete="100" expand="true">
+                        <depend id="17" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="10" uid="993c735fb42a4bbd84ab5f522b2d51ff" name="Ground Raise" meeting="false" start="2025-03-24" duration="3" complete="0" expand="true">
+                        <depend id="17" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="17" uid="fb426a5018d84b86a9a8a29303f7d63d" name="Ability switching" meeting="false" start="2025-03-27" duration="2" complete="0" expand="true"/>
+                </task>
+                <task id="12" uid="d3382741f5c04cbe91f1f1d0eb64530b" name="Levels" meeting="false" start="2025-03-31" duration="5" complete="30" expand="true">
+                    <task id="14" uid="9548ea6489824dcb97f6dc52a9ade056" name="Dev room" meeting="false" start="2025-03-31" duration="2" complete="75" expand="true"/>
+                    <task id="13" uid="8f913089084e4852a35c04368c3992a1" name="Level 1" meeting="false" start="2025-04-02" duration="3" complete="0" expand="true">
+                        <depend id="23" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="23" uid="cd7aa40c5e624190b17cfa39f001e2fa" name="Enemy AI" meeting="false" start="2025-04-07" duration="3" complete="0" expand="true"/>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Aaron Fleming" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
