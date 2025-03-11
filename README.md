@@ -1,1 +1,2 @@
 # EarthShard
+Earth Shard is a 3D first-person action game and puzzle game. The goal of Earth Shard is to progress through 4 levels and take advantage of the 2 abilities too defeat enemies and solve puzzles.
