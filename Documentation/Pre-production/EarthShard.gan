@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-02-24" view-index="0" gantt-divider-location="482" resource-divider-location="300" version="3.3.3309" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-04-14" view-index="0" gantt-divider-location="467" resource-divider-location="300" version="3.3.3309" locale="en_GB">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd3" name="Name" width="266" order="0"/>
@@ -10,7 +10,7 @@
         <option id="filter.overdueTasks" value="false"/>
         <option id="filter.inProgressTodayTasks" value="false"/>
         <timeline><![CDATA[14]]></timeline>
-        <option id="color.recent"><![CDATA[#ff33ff #0099ff #ffff33 #ffff00 #00cccc #00ff00 #ff0033 #f4f4f4 #cccc00]]></option>
+        <option id="color.recent"><![CDATA[#ff33ff #0099ff #ffff33 #00cccc #ffff00 #00ff00 #ff0033 #f4f4f4 #cccc00]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -40,7 +40,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" uid="a964c0c868e5435e8f86a48a697cf7e2" name="Iteration 1" color="#00ff00" meeting="false" start="2025-03-03" duration="38" complete="24" expand="false">
+        <task id="0" uid="a964c0c868e5435e8f86a48a697cf7e2" name="Iteration 1" color="#00ff00" meeting="false" start="2025-03-03" duration="38" complete="24" expand="true">
             <depend id="32" type="2" difference="0" hardness="Strong"/>
             <depend id="45" type="2" difference="0" hardness="Strong"/>
             <task id="19" uid="3a1de64de725406290916dd5492bec04" name="Documentation" color="#00cccc" meeting="false" start="2025-03-03" duration="36" complete="11" expand="true">
@@ -58,6 +58,7 @@
             <task id="24" uid="883889b111c245d4b474e1778d4f5da8" name="Documentation for Iteration 1 Complete" color="#00cccc" meeting="true" start="2025-04-08" duration="0" complete="0" expand="true"/>
             <task id="4" uid="17ad213f7aa24f578758319016669bb8" name="Game version 0.1.0-Alpha" color="#ff33ff" meeting="false" start="2025-03-17" duration="24" complete="36" expand="true">
                 <depend id="32" type="2" difference="0" hardness="Strong"/>
+                <depend id="81" type="2" difference="0" hardness="Strong"/>
                 <task id="5" uid="a49c98f44f324e63b96bedec41c73b41" name="Basic player controls" color="#ff33ff" meeting="false" start="2025-03-17" duration="2" complete="100" expand="true">
                     <depend id="8" type="2" difference="0" hardness="Strong"/>
                     <depend id="37" type="2" difference="0" hardness="Strong"/>
@@ -128,12 +129,82 @@
                 </task>
                 <task id="31" uid="cccbec26aa8241d9a2fde1461b5b9db7" name="Enemy AI complete" color="#ff33ff" meeting="true" start="2025-04-10" duration="0" complete="0" expand="true"/>
             </task>
+            <task id="81" uid="63b403f2882743d3bbd1796076ac3e4a" name="Game version 0.1.0-Alpha Complete" color="#ff33ff" meeting="true" start="2025-04-10" duration="0" complete="0" expand="true"/>
         </task>
         <task id="26" uid="1cd8d4e3289048709fcd8397b606e121" name="Planning Submission" color="#ff0033" meeting="true" start="2025-03-28" duration="0" complete="0" expand="true"/>
         <task id="32" uid="a0641d9cd6c4448a93f69185fd2217c6" name="Iteration 1 Complete" color="#00ff00" meeting="true" start="2025-04-10" duration="0" complete="0" expand="true"/>
         <task id="45" uid="5acfa2c997a94b0caad1ed62cfadf7ae" name="Iteration 2" color="#00ff00" meeting="false" start="2025-04-10" duration="32" complete="0" expand="true">
             <depend id="46" type="2" difference="0" hardness="Strong"/>
             <depend id="47" type="2" difference="0" hardness="Strong"/>
+            <task id="51" uid="7a553b7faa9f4347813f1e0b405892e0" name="Documentation" color="#00cccc" meeting="false" start="2025-04-10" duration="32" complete="0" expand="true">
+                <task id="52" uid="c48dc4c802c243e1b2ddd6636fbe70b1" name="GDD Version 2.0" color="#00cccc" meeting="false" start="2025-04-10" duration="32" complete="0" expand="true"/>
+                <task id="53" uid="43c3edc75325469ea8e4ae32c062de8f" name="Test Strategy Document" color="#00cccc" meeting="false" start="2025-04-10" duration="7" complete="0" expand="true"/>
+                <task id="54" uid="f75fa18772dd4c0dac7092daf48862ac" name="Sample Use Case Table" color="#00cccc" meeting="false" start="2025-04-17" duration="7" complete="0" expand="true"/>
+                <task id="55" uid="d0aef6bed4ab48a982e8b58b60e197eb" name="Sample 3rd Party Testing Documents" color="#00cccc" meeting="false" start="2025-04-24" duration="8" complete="0" expand="true"/>
+            </task>
+            <task id="56" uid="917b0bb89d3e4bf3a0f08525ba2c2299" name="Game Version 0.2.0-Alpha" color="#ff33ff" meeting="false" start="2025-04-12" duration="30" complete="0" expand="true">
+                <task id="57" uid="f5e91e772ffe43c18beaa8fc2d74eef3" name="Switches" color="#ff33ff" meeting="false" start="2025-04-12" duration="6" complete="0" expand="true">
+                    <depend id="60" type="2" difference="0" hardness="Strong"/>
+                    <depend id="72" type="2" difference="0" hardness="Strong"/>
+                    <task id="58" uid="2deaf0f8f3c04e97a6fbc0aeb1884502" name="Design switches" color="#0099ff" meeting="false" start="2025-04-12" duration="3" complete="0" expand="true">
+                        <depend id="59" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="59" uid="bccd66ab262242e2ab5813665fa40af3" name="Implement switches" color="#ff33ff" meeting="false" start="2025-04-15" duration="3" complete="0" expand="true"/>
+                </task>
+                <task id="60" uid="c1218a90155642218d2efa876fac7a23" name="Test switches" color="#ffff33" meeting="false" start="2025-04-18" duration="1" complete="0" expand="true">
+                    <depend id="61" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="61" uid="3dd369429cb04950bc7405bd0323c1e0" name="Switches Complete" color="#ff33ff" meeting="true" start="2025-04-19" duration="0" complete="0" expand="true"/>
+                <task id="62" uid="fff3bcbafc584053b94a5fb508eb180e" name="Levels" color="#ff33ff" meeting="false" start="2025-04-19" duration="19" complete="0" expand="true">
+                    <depend id="79" type="2" difference="0" hardness="Strong"/>
+                    <task id="72" uid="2d40485c30a84382ae71ba82eeadf49d" name="Level 2" color="#ff33ff" meeting="false" start="2025-04-19" duration="6" complete="0" expand="true">
+                        <depend id="66" type="2" difference="0" hardness="Strong"/>
+                        <depend id="73" type="2" difference="0" hardness="Strong"/>
+                        <task id="67" uid="d5cef2b6fe694cc0acfa8eb3591c47c7" name="Design Level 2" color="#0099ff" meeting="false" start="2025-04-19" duration="3" complete="0" expand="true">
+                            <depend id="63" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="63" uid="c07afc491b8f4589b80ed99b5175eec0" name="Implement Level 2" color="#ff33ff" meeting="false" start="2025-04-22" duration="3" complete="0" expand="true"/>
+                    </task>
+                    <task id="66" uid="3149a17a54514476b85d199fec7b0384" name="Test Level 2" color="#ffff33" meeting="false" start="2025-04-25" duration="1" complete="0" expand="true">
+                        <depend id="79" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="73" uid="fd612f609e264272a1cdcaa91d5117dd" name="Level 3" color="#ff33ff" meeting="false" start="2025-04-25" duration="6" complete="0" expand="true">
+                        <depend id="68" type="2" difference="0" hardness="Strong"/>
+                        <depend id="74" type="2" difference="0" hardness="Strong"/>
+                        <task id="69" uid="8f9eaa13dea84bb594145884797d91cd" name="Design Level 3" color="#0099ff" meeting="false" start="2025-04-25" duration="3" complete="0" expand="true">
+                            <depend id="64" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="64" uid="43bcad3bd52d47de86d1b283b6db3a86" name="Implement Level 3" color="#ff33ff" meeting="false" start="2025-04-28" duration="3" complete="0" expand="true"/>
+                    </task>
+                    <task id="68" uid="481855fcdf8749daab50a9e031001efd" name="Test Level 3" color="#ffff33" meeting="false" start="2025-05-01" duration="1" complete="0" expand="true">
+                        <depend id="79" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="74" uid="d4c17a6c47b542ea997fabc6ac337390" name="Level 4" color="#ff33ff" meeting="false" start="2025-05-01" duration="6" complete="0" expand="true">
+                        <depend id="71" type="2" difference="0" hardness="Strong"/>
+                        <task id="70" uid="7c05b54f55274c96b89ecb3b973c1d19" name="Design Level 4" color="#0099ff" meeting="false" start="2025-05-01" duration="3" complete="0" expand="true">
+                            <depend id="65" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="65" uid="a14d582fab3649c18cf33f025b547075" name="Implement Level 4" color="#ff33ff" meeting="false" start="2025-05-04" duration="3" complete="0" expand="true"/>
+                    </task>
+                    <task id="71" uid="6d8d6b45c1d345b4a7943b9882fb0ede" name="Test Level 4" color="#ffff33" meeting="false" start="2025-05-07" duration="1" complete="0" expand="true">
+                        <depend id="79" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="79" uid="acdbd855a4b7429c807570553d4dc589" name="Levels Complete" color="#ff33ff" meeting="true" start="2025-05-08" duration="0" complete="0" expand="true"/>
+                <task id="75" uid="2e255b7e4f0944608499cb5c8dbea106" name="Arms Animations" color="#ff33ff" meeting="false" start="2025-05-07" duration="4" complete="0" expand="true">
+                    <depend id="80" type="2" difference="0" hardness="Strong"/>
+                    <task id="76" uid="7f4f89b98a0f450bb65bbf081a909f7e" name="Design Animations" color="#0099ff" meeting="false" start="2025-05-07" duration="1" complete="0" expand="true">
+                        <depend id="77" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="77" uid="72a06cb8b487423b8e560ce62bf859ad" name="Implement Animations" color="#ff33ff" meeting="false" start="2025-05-08" duration="3" complete="0" expand="true">
+                        <depend id="78" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="78" uid="01cd95a1eea241eeb95f0290367c0d06" name="Test Animations" color="#ffff33" meeting="false" start="2025-05-11" duration="1" complete="0" expand="true">
+                    <depend id="80" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="80" uid="c05cd62bf8594cfc854f789337009683" name="Version 0.2.0-Alpha Complete" color="#ff33ff" meeting="true" start="2025-05-12" duration="0" complete="0" expand="true"/>
         </task>
         <task id="33" uid="e9b2caee6d7a4ee0b1c993d3d7f64d3b" name="Test Strategy Submission" color="#ff0033" meeting="true" start="2025-05-02" duration="0" complete="0" expand="true"/>
         <task id="47" uid="a084e91218254ce288aa6c65e1ad28d9" name="Iteration 2 Complete" color="#00ff00" meeting="true" start="2025-05-12" duration="0" complete="0" expand="true">
