@@ -36,7 +36,7 @@ public class RockProjectile : MonoBehaviour
     {
         if (!held)
         {
-            GameObject impactGO = Instantiate(impactEffect, transform.position, Quaternion.LookRotation(transform.position));
+            GameObject impactGO = Instantiate(impactEffect, transform.position, transform.rotation * Quaternion.Euler(0f, 180f, 0f));
             Destroy(impactGO, 2f);
 
             Destroy(gameObject);
