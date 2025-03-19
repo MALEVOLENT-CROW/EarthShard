@@ -9,13 +9,19 @@ public class RockProjectile : MonoBehaviour
     [SerializeField] private Transform throwerPos;
     [SerializeField] private GameObject impactEffect;
 
+    private MeshCollider rockCol;
+    private Rigidbody rb;
+
     public bool held;
 
     // Start is called before the first frame update
     void Start()
     {
-        rockPos = GetComponent<Transform>();
         throwerPos = GameObject.FindWithTag("Thrower").GetComponent<Transform>();
+
+        rockPos = GetComponent<Transform>();
+        rockCol = gameObject.GetComponent<MeshCollider>();
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     private void LateUpdate()
@@ -24,10 +30,13 @@ public class RockProjectile : MonoBehaviour
         {
             HoldRock();
         }
+        else { rockCol.enabled = true; rb.useGravity = true; }
     }
 
     private void HoldRock()
     {
+        rockCol.enabled = false;
+        rb.useGravity = false;
         rockPos.position = throwerPos.position;
         rockPos.rotation = throwerPos.rotation;
     }
