@@ -1,0 +1,102 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class GroundRaise : MonoBehaviour
+{
+    //fields 
+    public GameObject platformPrefab;
+    private InputManager inputManager;
+    private CharacterController controller;
+    private Transform playerTransform;
+
+    public float maxHeight = 5;
+    public float speed = 2;
+    public float slowFactor = 0.2f;
+
+    private bool platformActive = false;
+    private GameObject currentPlatform;
+    private Vector3 platformStartPos;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        inputManager = GameObject.FindWithTag("Player").GetComponent<InputManager>();
+        controller = GameObject.FindWithTag("Player").GetComponent<CharacterController>();
+        playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //spawns new platform on click
+        if (inputManager.player.ShootAlt.triggered)
+        {
+            if (platformActive)
+            {
+                //destroys current platform
+                Destroy(currentPlatform);
+                platformActive = false;
+            }
+            else
+            {
+                //spawns new platform if player is grounded
+                if (controller.isGrounded)
+                {
+                    SpawnPlatform();
+                }
+            }
+        }
+
+        //triggers platfrom to move up
+        if (platformActive && inputManager.player.Shoot.ReadValue<float>() > 0)
+        {
+            //move platform up and slow as it reaches max height
+            if (currentPlatform.transform.position.y < platformStartPos.y + maxHeight)
+            {
+                float distanceToMaxHight = currentPlatform.transform.position.y - platformStartPos.y;
+                if (distanceToMaxHight < maxHeight)
+                {
+                    //calc speed decrease based on distance
+                    float speedMult = 1 - Mathf.Clamp01(distanceToMaxHight / maxHeight * slowFactor);
+
+                    currentPlatform.transform.Translate(Vector3.up * speed * speedMult * Time.deltaTime);
+                }
+            }
+        }
+
+        //smooths character controller with platform
+        if (platformActive && controller.isGrounded)
+        {
+            //align player pos with platform pos
+            Vector3 platformPos = currentPlatform.transform.position;
+            Vector3 playerPos = playerTransform.position;
+            
+            //only adjust if player is on platform
+            if(playerPos.y < platformPos.y)
+            {
+                //match Y pos to player without overriding horizontal movement
+                playerPos.y = platformPos.y;
+                transform.position = playerPos;
+            }
+        }
+
+    }
+
+    private void SpawnPlatform()
+    {
+        //instantiate platform at players pos (adjust y value for player height)
+        Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y - 5f, transform.position.z);
+        currentPlatform = Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
+
+        //face platform same direction as player
+        currentPlatform.transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+
+        //remember spawn pos for movement calc
+        platformStartPos = currentPlatform.transform.position;
+
+        platformActive = true;
+    }
+}

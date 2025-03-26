@@ -141,7 +141,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!64 &31324056
 MeshCollider:
@@ -631,6 +631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_desert_003
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 515afd70b1a01db4bb14a20b123ef747, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -695,6 +699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_desert_002
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12fd0ea3beeec3e49afd02a0a332f75d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -719,7 +727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &457525538
 Transform:
   m_ObjectHideFlags: 0
@@ -842,6 +850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_desert_002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12fd0ea3beeec3e49afd02a0a332f75d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -906,6 +918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_desert_006
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 647c24e2f0ce95146bb2d84b6247c66b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -914,6 +930,53 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 980886361}
   m_SourcePrefab: {fileID: 100100000, guid: 647c24e2f0ce95146bb2d84b6247c66b, type: 3}
+--- !u!1 &629087079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629087080}
+  - component: {fileID: 629087081}
+  m_Layer: 0
+  m_Name: GroundRaise
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &629087080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629087079}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1784890989}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &629087081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629087079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fa4840a853f204cbdd9823d58360be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformPrefab: {fileID: 1471554067410917551, guid: f168bba5001e9fe40bcca52efb179587, type: 3}
+  maxHeight: 5
+  speed: 2
 --- !u!1001 &653771163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -969,6 +1032,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 647c24e2f0ce95146bb2d84b6247c66b, type: 3}
       propertyPath: m_Name
       value: Mountain_desert_006 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 647c24e2f0ce95146bb2d84b6247c66b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1049,6 +1116,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 40d66f3df6abd8641bba36c57a360162, type: 3}
       propertyPath: m_Name
       value: Plateau_desert_002
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 40d66f3df6abd8641bba36c57a360162, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1309,9 +1380,9 @@ Mesh:
       format: 0
       dimension: 2
     - stream: 0
-      offset: 0
+      offset: 48
       format: 0
-      dimension: 0
+      dimension: 2
     - stream: 0
       offset: 0
       format: 0
@@ -1344,8 +1415,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 1152
-    _typelessdata: 26cb92c1000000009d34664200000000000000000000803f000080bf0000000000000000000080bf26cb9241000000001a580742000000009d34664200000000000000000000803f000080bf0000000000000000000080bf1a5807c20000000026cb92c1eceb863f9d34664200000000000000000000803f000080bf0000000000000000000080bf26cb9241eceb863f1a580742eceb863f9d34664200000000000000000000803f000080bf0000000000000000000080bf1a5807c2eceb863f1a580742000000009d3466420000803f000000000000000000000000000000000000803f000080bf9d346642000000001a58074200000000000000000000803f000000000000000000000000000000000000803f000080bf00000000000000001a580742eceb863f9d3466420000803f000000000000000000000000000000000000803f000080bf9d346642eceb863f1a580742eceb863f000000000000803f000000000000000000000000000000000000803f000080bf00000000eceb863f1a58074200000000000000000000000000000000000080bf0000803f0000000000000000000080bf1a5807420000000026cb92c100000000000000000000000000000000000080bf0000803f0000000000000000000080bf26cb92c1000000001a580742eceb863f000000000000000000000000000080bf0000803f0000000000000000000080bf1a580742eceb863f26cb92c1eceb863f000000000000000000000000000080bf0000803f0000000000000000000080bf26cb92c1eceb863f26cb92c10000000000000000000080bf00000000000000000000000000000000000080bf000080bf000000000000000026cb92c1000000009d346642000080bf00000000000000000000000000000000000080bf000080bf9d3466c20000000026cb92c1eceb863f00000000000080bf00000000000000000000000000000000000080bf000080bf00000000eceb863f26cb92c1eceb863f9d346642000080bf00000000000000000000000000000000000080bf000080bf9d3466c2eceb863f26cb92c1eceb863f9d346642000000000000803f000000000000803f0000000000000000000080bf26cb92c19d3466421a580742eceb863f9d346642000000000000803f000000000000803f0000000000000000000080bf1a5807429d34664226cb92c1eceb863f00000000000000000000803f000000000000803f0000000000000000000080bf26cb92c1000000001a580742eceb863f00000000000000000000803f000000000000803f0000000000000000000080bf1a5807420000000026cb92c1000000000000000000000000000080bf00000000000080bf0000000000000000000080bf26cb9241000000001a580742000000000000000000000000000080bf00000000000080bf0000000000000000000080bf1a5807c20000000026cb92c1000000009d34664200000000000080bf00000000000080bf0000000000000000000080bf26cb92419d3466421a580742000000009d34664200000000000080bf00000000000080bf0000000000000000000080bf1a5807c29d346642
+    m_DataSize: 1344
+    _typelessdata: 26cb92c1000000009d34664200000000000000000000803f000080bf0000000000000000000080bf26cb924100000000227b063fce499f3d1a580742000000009d34664200000000000000000000803f000080bf0000000000000000000080bf1a5807c2000000003923773fce499f3d26cb92c1eceb863f9d34664200000000000000000000803f000080bf0000000000000000000080bf26cb9241eceb863f207b063f127eb13d1a580742eceb863f9d34664200000000000000000000803f000080bf0000000000000000000080bf1a5807c2eceb863f3723773f117eb13d1a580742000000009d3466420000803f000000000000000000000000000000000000803f000080bf9d346642000000000bd7a33c0bd7a33c1a58074200000000000000000000803f000000000000000000000000000000000000803f000080bf00000000000000006a5c013f0bd7a33c1a580742eceb863f9d3466420000803f000000000000000000000000000000000000803f000080bf9d346642eceb863fabd7a33c17a8ec3c1a580742eceb863f000000000000803f000000000000000000000000000000000000803f000080bf00000000eceb863f6f5c013f17a8ec3c1a58074200000000000000000000000000000000000080bf0000803f0000000000000000000080bf1a58074200000000227b063fd573da3d26cb92c100000000000000000000000000000000000080bf0000803f0000000000000000000080bf26cb92c1000000003923773fd573da3d1a580742eceb863f000000000000000000000000000080bf0000803f0000000000000000000080bf1a580742eceb863f207b063f18a8ec3d26cb92c1eceb863f000000000000000000000000000080bf0000803f0000000000000000000080bf26cb92c1eceb863f3723773f18a8ec3d26cb92c10000000000000000000080bf00000000000000000000000000000000000080bf000080bf00000000000000000bd7a33c913f483d26cb92c1000000009d346642000080bf00000000000000000000000000000000000080bf000080bf9d3466c2000000006a5c013f913f483d26cb92c1eceb863f00000000000080bf00000000000000000000000000000000000080bf000080bf00000000eceb863fabd7a33c17a86c3d26cb92c1eceb863f9d346642000080bf00000000000000000000000000000000000080bf000080bf9d3466c2eceb863f6f5c013f17a86c3d26cb92c1eceb863f9d346642000000000000803f000000000000803f0000000000000000000080bf26cb92c19d346642685c013f0ab0093f1a580742eceb863f9d346642000000000000803f000000000000803f0000000000000000000080bf1a5807429d346642685c013f22587a3f26cb92c1eceb863f00000000000000000000803f000000000000803f0000000000000000000080bf26cb92c1000000000bd7a33c0ab0093f1a580742eceb863f00000000000000000000803f000000000000803f0000000000000000000080bf1a580742000000000cd7a33c21587a3f26cb92c1000000000000000000000000000080bf00000000000080bf0000000000000000000080bf26cb924100000000685c013fce499f3d1a580742000000000000000000000000000080bf00000000000080bf0000000000000000000080bf1a5807c200000000685c013f5191043f26cb92c1000000009d34664200000000000080bf00000000000080bf0000000000000000000080bf26cb92419d3466420bd7a33cce499f3d1a580742000000009d34664200000000000080bf00000000000080bf0000000000000000000080bf1a5807c29d34664213d7a33c5191043f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -1406,7 +1477,7 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
+  m_MeshMetrics[1]: 14062.478
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -1587,6 +1658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_desert_009 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cdeec6dac85de146870deae7c067e0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1666,6 +1741,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e2a3bb5b75012854f9d83e736f9602b5, type: 3}
       propertyPath: m_Name
       value: Plateau_desert_004
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e2a3bb5b75012854f9d83e736f9602b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1938,6 +2017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_desert_005
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92e2f409e857644409544e04a4c92db0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2012,6 +2095,7 @@ Transform:
   - {fileID: 89494925}
   - {fileID: 457525538}
   - {fileID: 2066581303}
+  - {fileID: 629087080}
   m_Father: {fileID: 1456124297}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1784890990
@@ -2245,6 +2329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_desert_009
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4cdeec6dac85de146870deae7c067e0d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2383,7 +2471,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2012986324
 Transform:
@@ -2548,6 +2636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_desert_008
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 425d9772c15622a45b8027f8d4f65f82, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2611,6 +2703,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 515afd70b1a01db4bb14a20b123ef747, type: 3}
       propertyPath: m_Name
       value: Mountain_desert_003 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 515afd70b1a01db4bb14a20b123ef747, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

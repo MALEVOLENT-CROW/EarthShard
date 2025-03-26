@@ -13,7 +13,6 @@ public class InputManager : MonoBehaviour
     private PlayerMotor motor;
     private PlayerLook look;
 
-    private bool shooting;
 
     private void Awake()
     {
@@ -28,28 +27,7 @@ public class InputManager : MonoBehaviour
         //lock cursor to cam
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
-        //check for shooting
-        playerInput.Player.Shoot.performed += ShootPerformed;
-        playerInput.Player.Shoot.canceled += ShootCanceled;
     }
-
-    #region Shooting hold detection
-    public bool GetShooting()
-    {
-        return shooting;
-    }
-
-    private void ShootCanceled(InputAction.CallbackContext context)
-    {
-        shooting = false;
-    }
-
-    private void ShootPerformed(InputAction.CallbackContext context)
-    {
-        shooting = true;
-    }
-    #endregion
 
     private void Update()
     {

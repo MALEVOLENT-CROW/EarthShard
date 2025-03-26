@@ -42,15 +42,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Shoot",
-                    "type": "Button",
-                    "id": "a3fbcc8d-d149-423e-b7ba-e2cdf55b113f",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
                     "name": "Reload",
                     "type": "Button",
                     "id": "bb448468-1234-42e7-8b8c-5362a7a6b465",
@@ -67,6 +58,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "a3fbcc8d-d149-423e-b7ba-e2cdf55b113f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "ShootAlt",
@@ -213,28 +213,6 @@
                 },
                 {
                     "name": "",
-                    "id": "a2295367-5e30-41d1-9dfa-1ee72de0af77",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "071f572c-96bc-44e2-aa9a-af97e0c94a6a",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "9ac62f8f-e3da-4457-9f52-7189f5be1387",
                     "path": "<Keyboard>/r",
                     "interactions": "",
@@ -279,7 +257,7 @@
                 },
                 {
                     "name": "",
-                    "id": "3ee5f433-7956-4790-9480-d36ecd1a111f",
+                    "id": "168f5c4e-c041-4107-8845-7d0e1a479dd8",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
@@ -296,6 +274,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "ShootAlt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3128fc9a-1185-4b18-8543-7f6a2e9954e2",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "071f572c-96bc-44e2-aa9a-af97e0c94a6a",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
