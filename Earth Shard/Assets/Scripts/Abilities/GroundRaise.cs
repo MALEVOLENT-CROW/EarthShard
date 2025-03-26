@@ -88,11 +88,11 @@ public class GroundRaise : MonoBehaviour
     private void SpawnPlatform()
     {
         //instantiate platform at players pos (adjust y value for player height)
-        Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y - 5f, transform.position.z);
+        Vector3 spawnPosition = new Vector3(playerTransform.position.x, playerTransform.position.y - 5f, playerTransform.position.z);
         currentPlatform = Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
 
         //face platform same direction as player
-        currentPlatform.transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        currentPlatform.transform.rotation = Quaternion.Euler(0, playerTransform.rotation.eulerAngles.y, 0);
 
         //remember spawn pos for movement calc
         platformStartPos = currentPlatform.transform.position;

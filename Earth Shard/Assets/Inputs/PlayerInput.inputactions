@@ -42,15 +42,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Reload",
-                    "type": "Button",
-                    "id": "bb448468-1234-42e7-8b8c-5362a7a6b465",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Sprint",
                     "type": "Button",
                     "id": "935f4e54-cb65-4e40-8ada-33e28a60c84f",
@@ -72,6 +63,15 @@
                     "name": "ShootAlt",
                     "type": "Button",
                     "id": "0af1ba63-cebd-4881-ab83-0d9c105b215c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AbilityCycle",
+                    "type": "Button",
+                    "id": "dffc1de7-f16c-4bec-bd46-df214ea94040",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -213,28 +213,6 @@
                 },
                 {
                     "name": "",
-                    "id": "9ac62f8f-e3da-4457-9f52-7189f5be1387",
-                    "path": "<Keyboard>/r",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Reload",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "49d9e5f8-0d62-437c-a2bc-b99bca217e19",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Reload",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "85d57d39-ea04-4103-892e-e925f48a0379",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
@@ -296,6 +274,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9618384b-3cfd-471e-be0e-dd334d602a9f",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AbilityCycle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1efe3c54-19ad-40ae-84cb-768e214bd3aa",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AbilityCycle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
