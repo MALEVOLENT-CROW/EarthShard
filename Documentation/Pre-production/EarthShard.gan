@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-02-28" view-index="0" gantt-divider-location="437" resource-divider-location="300" version="3.3.3309" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-03-06" view-index="0" gantt-divider-location="422" resource-divider-location="300" version="3.3.3309" locale="en_GB">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Name" width="239" order="0"/>
-        <field id="tpd4" name="Begin date" width="91" order="1"/>
-        <field id="tpd5" name="End date" width="91" order="2"/>
+        <field id="tpd3" name="Name" width="230" order="0"/>
+        <field id="tpd4" name="Begin date" width="88" order="1"/>
+        <field id="tpd5" name="End date" width="88" order="2"/>
         <field id="tpd15" name="Notes" width="20" order="3"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="filter.dueTodayTasks" value="false"/>
@@ -40,23 +40,23 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" uid="a964c0c868e5435e8f86a48a697cf7e2" name="Iteration 1" color="#00ff00" meeting="false" start="2025-03-03" duration="38" complete="28" expand="true">
+        <task id="0" uid="a964c0c868e5435e8f86a48a697cf7e2" name="Iteration 1" color="#00ff00" meeting="false" start="2025-03-03" duration="38" complete="65" expand="true">
             <depend id="32" type="2" difference="0" hardness="Strong"/>
             <depend id="45" type="2" difference="0" hardness="Strong"/>
-            <task id="19" uid="3a1de64de725406290916dd5492bec04" name="Documentation" color="#00cccc" meeting="false" start="2025-03-03" duration="36" complete="19" expand="true">
+            <task id="19" uid="3a1de64de725406290916dd5492bec04" name="Documentation" color="#00cccc" meeting="false" start="2025-03-03" duration="36" complete="76" expand="true">
                 <depend id="24" type="2" difference="0" hardness="Strong"/>
                 <depend id="32" type="2" difference="0" hardness="Strong"/>
-                <task id="1" uid="dd7aac53919441b9856c7fd8671be0b7" name="Proposal Document" color="#00cccc" meeting="false" start="2025-03-03" duration="7" complete="100" expand="true">
+                <task id="1" uid="dd7aac53919441b9856c7fd8671be0b7" name="Proposal Document" color="#00cccc" meeting="false" start="2025-03-03" duration="12" complete="100" expand="true">
                     <depend id="50" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="2" uid="4ee1ae123fc549a4888b1a243b902adc" name="Pre-production report" color="#00cccc" meeting="false" start="2025-03-10" duration="7" complete="0" expand="true">
+                <task id="2" uid="4ee1ae123fc549a4888b1a243b902adc" name="Pre-production report" color="#00cccc" meeting="false" start="2025-03-10" duration="16" complete="96" expand="true">
                     <depend id="50" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="49" uid="4323e281fdf349e58ff6eebcb2cffffe" name="GDD Version 1.0" color="#00cccc" meeting="false" start="2025-03-17" duration="22" complete="0" expand="true"/>
+                <task id="49" uid="4323e281fdf349e58ff6eebcb2cffffe" name="GDD Version 1.0" color="#00cccc" meeting="false" start="2025-03-31" duration="8" complete="0" expand="true"/>
             </task>
-            <task id="50" uid="33401aef89e24eb6a3be960cf95e93e6" name="Planning Documentation Complete" color="#00cccc" meeting="true" start="2025-03-17" duration="0" complete="0" expand="true"/>
+            <task id="50" uid="33401aef89e24eb6a3be960cf95e93e6" name="Planning Documentation Complete" color="#00cccc" meeting="true" start="2025-03-26" duration="0" complete="0" expand="true"/>
             <task id="24" uid="883889b111c245d4b474e1778d4f5da8" name="Documentation for Iteration 1 Complete" color="#00cccc" meeting="true" start="2025-04-08" duration="0" complete="0" expand="true"/>
-            <task id="4" uid="17ad213f7aa24f578758319016669bb8" name="Game version 0.1.0-Alpha" color="#ff33ff" meeting="false" start="2025-03-17" duration="24" complete="36" expand="true">
+            <task id="4" uid="17ad213f7aa24f578758319016669bb8" name="Game version 0.1.0-Alpha" color="#ff33ff" meeting="false" start="2025-03-17" duration="24" complete="56" expand="true">
                 <depend id="32" type="2" difference="0" hardness="Strong"/>
                 <depend id="81" type="2" difference="0" hardness="Strong"/>
                 <task id="5" uid="a49c98f44f324e63b96bedec41c73b41" name="Basic player controls" color="#ff33ff" meeting="false" start="2025-03-17" duration="2" complete="100" expand="true">
@@ -65,7 +65,7 @@
                     <task id="6" uid="f92611efbbe34606bdeb5e93261b984e" name="Movement" color="#ff33ff" meeting="false" start="2025-03-17" duration="2" complete="100" expand="true"/>
                     <task id="7" uid="bd26dfcceb14468baff9f156c58142fe" name="Camera controls" color="#ff33ff" meeting="false" start="2025-03-17" duration="2" complete="100" expand="true"/>
                 </task>
-                <task id="37" uid="ad7da08a0b074e6ab5c493b85f49625f" name="Basic Player Controls Testing" color="#ffff00" meeting="false" start="2025-03-19" duration="1" complete="0" expand="true">
+                <task id="37" uid="ad7da08a0b074e6ab5c493b85f49625f" name="Basic Player Controls Testing" color="#ffff00" meeting="false" start="2025-03-19" duration="1" complete="100" expand="true">
                     <depend id="27" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="27" uid="9fbe27466bf44c7ba91bccab748b181d" name="Basic Player Controls Complete" color="#ff33ff" meeting="true" start="2025-03-20" duration="0" complete="0" expand="true"/>
@@ -80,18 +80,18 @@
                     <task id="22" uid="f9d969fdce3c401b87f79c86fbff7518" name="Enemy Model" color="#ff33ff" meeting="false" start="2025-03-18" duration="1" complete="0" expand="true"/>
                 </task>
                 <task id="28" uid="f0a42c4eb74c469fb4303724e0269148" name="Main Models Imported" color="#ff33ff" meeting="true" start="2025-03-19" duration="0" complete="0" expand="true"/>
-                <task id="8" uid="85497164d7bb4550ae8946385ab878d1" name="Abilites" color="#ff33ff" meeting="false" start="2025-03-19" duration="11" complete="31" expand="true">
+                <task id="8" uid="85497164d7bb4550ae8946385ab878d1" name="Abilites" color="#ff33ff" meeting="false" start="2025-03-19" duration="11" complete="75" expand="true">
                     <depend id="38" type="2" difference="0" hardness="Strong"/>
-                    <task id="39" uid="ab0fcd4cb2c24b178a998c472dc0536a" name="Design Rock Throw" color="#0099ff" meeting="false" start="2025-03-19" duration="2" complete="0" expand="true">
+                    <task id="39" uid="ab0fcd4cb2c24b178a998c472dc0536a" name="Design Rock Throw" color="#0099ff" meeting="false" start="2025-03-19" duration="2" complete="100" expand="true">
                         <depend id="9" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="40" uid="74405bb3c5284fda8ea94361b720e07d" name="Design Ground Raise" color="#0099ff" meeting="false" start="2025-03-19" duration="2" complete="0" expand="true">
+                    <task id="40" uid="74405bb3c5284fda8ea94361b720e07d" name="Design Ground Raise" color="#0099ff" meeting="false" start="2025-03-19" duration="2" complete="100" expand="true">
                         <depend id="10" type="2" difference="0" hardness="Strong"/>
                     </task>
                     <task id="9" uid="28212a7699664c6e837a1ed62a4a49a6" name="Rock Throw" color="#ff33ff" meeting="false" start="2025-03-21" duration="5" complete="100" expand="true">
                         <depend id="17" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="10" uid="993c735fb42a4bbd84ab5f522b2d51ff" name="Ground Raise" color="#ff33ff" meeting="false" start="2025-03-21" duration="3" complete="0" expand="true">
+                    <task id="10" uid="993c735fb42a4bbd84ab5f522b2d51ff" name="Ground Raise" color="#ff33ff" meeting="false" start="2025-03-21" duration="3" complete="100" expand="true">
                         <depend id="17" type="2" difference="0" hardness="Strong"/>
                     </task>
                     <task id="17" uid="fb426a5018d84b86a9a8a29303f7d63d" name="Ability switching" color="#ff33ff" meeting="false" start="2025-03-26" duration="4" complete="0" expand="true"/>

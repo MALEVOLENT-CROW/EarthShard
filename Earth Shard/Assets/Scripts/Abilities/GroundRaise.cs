@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class GroundRaise : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class GroundRaise : MonoBehaviour
         inputManager = GameObject.FindWithTag("Player").GetComponent<InputManager>();
         controller = GameObject.FindWithTag("Player").GetComponent<CharacterController>();
         playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+
     }
 
     // Update is called once per frame
@@ -52,7 +54,7 @@ public class GroundRaise : MonoBehaviour
 
         //triggers platfrom to move up
         if (platformActive && inputManager.player.Shoot.ReadValue<float>() > 0)
-        {
+        {           
             //move platform up and slow as it reaches max height
             if (currentPlatform.transform.position.y < platformStartPos.y + maxHeight)
             {
@@ -63,34 +65,17 @@ public class GroundRaise : MonoBehaviour
                     float speedMult = 1 - Mathf.Clamp01(distanceToMaxHight / maxHeight * slowFactor);
 
                     currentPlatform.transform.Translate(Vector3.up * speed * speedMult * Time.deltaTime);
-                }
+                }        
             }
         }
-
-        //smooths character controller with platform
-        if (platformActive && controller.isGrounded)
-        {
-            //align player pos with platform pos
-            Vector3 platformPos = currentPlatform.transform.position;
-            Vector3 playerPos = playerTransform.position;
-            
-            //only adjust if player is on platform
-            if(playerPos.y < platformPos.y)
-            {
-                //match Y pos to player without overriding horizontal movement
-                playerPos.y = platformPos.y;
-                transform.position = playerPos;
-            }
-        }
-
     }
 
     private void SpawnPlatform()
     {
         //instantiate platform at players pos (adjust y value for player height)
-        Vector3 spawnPosition = new Vector3(playerTransform.position.x, playerTransform.position.y - 5f, playerTransform.position.z);
+        Vector3 spawnPosition = playerTransform.position + Vector3.down * 5f;
         currentPlatform = Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
-
+        
         //face platform same direction as player
         currentPlatform.transform.rotation = Quaternion.Euler(0, playerTransform.rotation.eulerAngles.y, 0);
 
