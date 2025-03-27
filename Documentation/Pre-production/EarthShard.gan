@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-02-28" view-index="0" gantt-divider-location="408" resource-divider-location="300" version="3.3.3309" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-04-01" view-index="0" gantt-divider-location="394" resource-divider-location="300" version="3.3.3316" locale="en_GB">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Name" width="222" order="0"/>
-        <field id="tpd4" name="Begin date" width="85" order="1"/>
-        <field id="tpd5" name="End date" width="85" order="2"/>
+        <field id="tpd3" name="Name" width="214" order="0"/>
+        <field id="tpd4" name="Begin date" width="82" order="1"/>
+        <field id="tpd5" name="End date" width="82" order="2"/>
         <field id="tpd15" name="Notes" width="20" order="3"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="filter.dueTodayTasks" value="false"/>
@@ -40,11 +40,11 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" uid="a964c0c868e5435e8f86a48a697cf7e2" name="Iteration 1" color="#00ff00" meeting="false" start="2025-03-03" duration="38" complete="65" expand="true">
+        <task id="0" uid="a964c0c868e5435e8f86a48a697cf7e2" name="Iteration 1" color="#00ff00" meeting="false" start="2025-03-03" duration="38" complete="72" expand="true">
             <notes><![CDATA[FIrst iteration of development with a heavier focus on pre-production and documentation]]></notes>
             <depend id="32" type="2" difference="0" hardness="Strong"/>
             <depend id="45" type="2" difference="0" hardness="Strong"/>
-            <task id="19" uid="3a1de64de725406290916dd5492bec04" name="Documentation" color="#00cccc" meeting="false" start="2025-03-03" duration="36" complete="76" expand="true">
+            <task id="19" uid="3a1de64de725406290916dd5492bec04" name="Documentation" color="#00cccc" meeting="false" start="2025-03-03" duration="36" complete="77" expand="true">
                 <notes><![CDATA[all documentation require for first iteration]]></notes>
                 <depend id="24" type="2" difference="0" hardness="Strong"/>
                 <depend id="32" type="2" difference="0" hardness="Strong"/>
@@ -52,7 +52,7 @@
                     <notes><![CDATA[Create proposal doc and pdf]]></notes>
                     <depend id="50" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="2" uid="4ee1ae123fc549a4888b1a243b902adc" name="Pre-production report" color="#00cccc" meeting="false" start="2025-03-10" duration="16" complete="96" expand="true">
+                <task id="2" uid="4ee1ae123fc549a4888b1a243b902adc" name="Pre-production report" color="#00cccc" meeting="false" start="2025-03-10" duration="16" complete="100" expand="true">
                     <notes><![CDATA[Create pre-production report and pdf]]></notes>
                     <depend id="50" type="2" difference="0" hardness="Strong"/>
                 </task>
@@ -62,7 +62,7 @@
             </task>
             <task id="50" uid="33401aef89e24eb6a3be960cf95e93e6" name="Planning Documentation Complete" color="#00cccc" meeting="true" start="2025-03-26" duration="0" complete="0" expand="true"/>
             <task id="24" uid="883889b111c245d4b474e1778d4f5da8" name="Documentation for Iteration 1 Complete" color="#00cccc" meeting="true" start="2025-04-08" duration="0" complete="0" expand="true"/>
-            <task id="4" uid="17ad213f7aa24f578758319016669bb8" name="Game version 0.1.0-Alpha" color="#ff33ff" meeting="false" start="2025-03-17" duration="24" complete="56" expand="true">
+            <task id="4" uid="17ad213f7aa24f578758319016669bb8" name="Game version 0.1.0-Alpha" color="#ff33ff" meeting="false" start="2025-03-17" duration="24" complete="67" expand="true">
                 <notes><![CDATA[First working version of the game with core mechanics such as movement and camera controls, basic libraries imported like SFX and VFX. basic models importet like arms and enemy. basic version of abilities constructed sich as rock throw and ground raise with ability switching. and the first level produced with a dev room. enemy AI should also be implimented for this version too.]]></notes>
                 <depend id="32" type="2" difference="0" hardness="Strong"/>
                 <depend id="81" type="2" difference="0" hardness="Strong"/>
@@ -88,58 +88,96 @@
                 <task id="15" uid="2e8707996aca43d1ab7f0d530e6cf274" name="SFX" color="#ff33ff" meeting="false" start="2025-03-17" duration="1" complete="100" expand="true">
                     <notes><![CDATA[import sound effects from freesound or unity assets store.]]></notes>
                 </task>
-                <task id="16" uid="64c2f3ebb8ce4bb79e53ec07ab1ee5c9" name="VFX" color="#ff33ff" meeting="false" start="2025-03-17" duration="1" complete="100" expand="true"/>
+                <task id="16" uid="64c2f3ebb8ce4bb79e53ec07ab1ee5c9" name="VFX" color="#ff33ff" meeting="false" start="2025-03-17" duration="1" complete="100" expand="true">
+                    <notes><![CDATA[import particles and other such effects found from asset store.]]></notes>
+                </task>
                 <task id="20" uid="048085ab487d40aa806a48e953377826" name="Models" color="#ff33ff" meeting="false" start="2025-03-18" duration="1" complete="50" expand="true">
                     <depend id="28" type="2" difference="0" hardness="Strong"/>
-                    <task id="21" uid="009237bd740a47f68e0f3cc85602decd" name="Player arms model" color="#ff33ff" meeting="false" start="2025-03-18" duration="1" complete="100" expand="true"/>
-                    <task id="22" uid="f9d969fdce3c401b87f79c86fbff7518" name="Enemy Model" color="#ff33ff" meeting="false" start="2025-03-18" duration="1" complete="0" expand="true"/>
+                    <task id="21" uid="009237bd740a47f68e0f3cc85602decd" name="Player arms model" color="#ff33ff" meeting="false" start="2025-03-18" duration="1" complete="100" expand="true">
+                        <notes><![CDATA[Import free player arm modles from asset store, make sure they're rigged for later animation]]></notes>
+                    </task>
+                    <task id="22" uid="f9d969fdce3c401b87f79c86fbff7518" name="Enemy Model" color="#ff33ff" meeting="false" start="2025-03-18" duration="1" complete="0" expand="true">
+                        <notes><![CDATA[import an rigged enemy rock golem model from the asset store.
+
+still yet to find one that will work with the game, can program the enemies without it right now but hope to find a good one soon.]]></notes>
+                    </task>
                 </task>
                 <task id="28" uid="f0a42c4eb74c469fb4303724e0269148" name="Main Models Imported" color="#ff33ff" meeting="true" start="2025-03-19" duration="0" complete="0" expand="true"/>
-                <task id="8" uid="85497164d7bb4550ae8946385ab878d1" name="Abilites" color="#ff33ff" meeting="false" start="2025-03-19" duration="11" complete="75" expand="true">
+                <task id="8" uid="85497164d7bb4550ae8946385ab878d1" name="Abilites" color="#ff33ff" meeting="false" start="2025-03-19" duration="11" complete="100" expand="true">
                     <depend id="38" type="2" difference="0" hardness="Strong"/>
                     <task id="39" uid="ab0fcd4cb2c24b178a998c472dc0536a" name="Design Rock Throw" color="#0099ff" meeting="false" start="2025-03-19" duration="2" complete="100" expand="true">
+                        <notes><![CDATA[design and plan how the rock throw ability will work in game. this includes putting down how it works in a GDD. ]]></notes>
                         <depend id="9" type="2" difference="0" hardness="Strong"/>
                     </task>
                     <task id="40" uid="74405bb3c5284fda8ea94361b720e07d" name="Design Ground Raise" color="#0099ff" meeting="false" start="2025-03-19" duration="2" complete="100" expand="true">
+                        <notes><![CDATA[Deisign how the ground raise ability will work. this includes putting down its functionality in a GDD]]></notes>
                         <depend id="10" type="2" difference="0" hardness="Strong"/>
                     </task>
                     <task id="9" uid="28212a7699664c6e837a1ed62a4a49a6" name="Rock Throw" color="#ff33ff" meeting="false" start="2025-03-21" duration="5" complete="100" expand="true">
+                        <notes><![CDATA[Implementing the rock throw into earth shard.
+
+the rock throw ability allows the player to summon a rock with right click and throw it with left click. the rock is then destroyed on what it collides with. the rock only has active physics when thrown so walking into walls with it doesn't bug out.]]></notes>
                         <depend id="17" type="2" difference="0" hardness="Strong"/>
                     </task>
                     <task id="10" uid="993c735fb42a4bbd84ab5f522b2d51ff" name="Ground Raise" color="#ff33ff" meeting="false" start="2025-03-21" duration="3" complete="100" expand="true">
+                        <notes><![CDATA[Implementing the ground raise into the game.
+
+the ground raise works by pressing right click to summon a pillar below the player, then if the player holds left click it will begin to raise up to maximum of 5 meteres. it slows as it reaches max height. if the player clicks right click again it deletes the tower and allows them to spawn another.
+]]></notes>
                         <depend id="17" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="17" uid="fb426a5018d84b86a9a8a29303f7d63d" name="Ability switching" color="#ff33ff" meeting="false" start="2025-03-26" duration="4" complete="0" expand="true"/>
+                    <task id="17" uid="fb426a5018d84b86a9a8a29303f7d63d" name="Ability switching" color="#ff33ff" meeting="false" start="2025-03-26" duration="4" complete="100" expand="true">
+                        <notes><![CDATA[implementing ability switching.
+
+this is super easy to implement, just pressing a button will alternate what ability is enabled buy enabling and disabling there game objects.]]></notes>
+                    </task>
                 </task>
                 <task id="38" uid="4bc8021f5a264de0bd2aac2104604dfd" name="Testing Abilities" color="#ffff33" meeting="false" start="2025-03-30" duration="2" complete="0" expand="true">
+                    <notes><![CDATA[test the abilities to a make sure they work as intended and fix any bugs. this is also to take notes of possible iterations that can be made in future sprints]]></notes>
                     <depend id="12" type="2" difference="0" hardness="Strong"/>
                     <depend id="29" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="29" uid="8e5eba07ffb44ef89650b146abf27a43" name="Abilities Complete" color="#ff33ff" meeting="true" start="2025-04-01" duration="0" complete="0" expand="true"/>
-                <task id="12" uid="d3382741f5c04cbe91f1f1d0eb64530b" name="Levels" color="#ff33ff" meeting="false" start="2025-04-01" duration="6" complete="18" expand="true">
+                <task id="12" uid="d3382741f5c04cbe91f1f1d0eb64530b" name="Levels" color="#ff33ff" meeting="false" start="2025-04-01" duration="6" complete="25" expand="true">
                     <depend id="41" type="2" difference="0" hardness="Strong"/>
                     <task id="42" uid="6a43656726074f0784e12832aaa3fc85" name="Design Level 1" color="#0099ff" meeting="false" start="2025-04-01" duration="1" complete="0" expand="true">
+                        <notes><![CDATA[design a map/layout of the first level and put it in the GDD]]></notes>
                         <depend id="13" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="14" uid="9548ea6489824dcb97f6dc52a9ade056" name="Dev room" color="#ff33ff" meeting="false" start="2025-04-01" duration="2" complete="75" expand="true">
+                    <task id="14" uid="9548ea6489824dcb97f6dc52a9ade056" name="Dev room" color="#ff33ff" meeting="false" start="2025-04-01" duration="2" complete="100" expand="true">
+                        <notes><![CDATA[create a dev room for testing purposes. 
+
+dev room is already complete. Ea-nasir is in it.]]></notes>
                         <depend id="41" type="2" difference="0" hardness="Strong"/>
                     </task>
                     <task id="13" uid="8f913089084e4852a35c04368c3992a1" name="Implement Level 1" color="#ff33ff" meeting="false" start="2025-04-02" duration="5" complete="0" expand="true">
+                        <notes><![CDATA[Put Level 1 together from the design. import other envrionmental assets that may be required for it decoration. the level can be better dessed up in the polish phase towards the end of development. at first it needs to function.
+
+level 1 will have enemies the player must fight and killing all in a room opens the door to the next section which. after doing this 2 maybe 3 times there will a be a door to the end of the level]]></notes>
                         <depend id="23" type="2" difference="0" hardness="Strong"/>
                     </task>
                 </task>
                 <task id="41" uid="3ad22250679b419ab97e7abe983c133a" name="Test Level 1" color="#ffff33" meeting="false" start="2025-04-07" duration="1" complete="0" expand="true">
+                    <notes><![CDATA[make sure level 1 is bug free, with enemies navigating it properly. and no areas the player could get out of bounds.]]></notes>
                     <depend id="30" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="30" uid="8ced24a3ddaa418d8a972c8a93859ce8" name="Levels Complete" color="#ff33ff" meeting="true" start="2025-04-08" duration="0" complete="0" expand="true"/>
                 <task id="23" uid="cd7aa40c5e624190b17cfa39f001e2fa" name="Enemy AI" color="#ff33ff" meeting="false" start="2025-04-07" duration="2" complete="0" expand="true">
                     <depend id="44" type="2" difference="0" hardness="Strong"/>
                     <task id="43" uid="ac07b577df8642a1b4785e313cddb80f" name="Design State Machine" color="#0099ff" meeting="false" start="2025-04-07" duration="1" complete="0" expand="true">
+                        <notes><![CDATA[Put the design for the state machine in the GDD. ]]></notes>
                         <depend id="25" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="25" uid="8ce1759c24b04fa1bec7c6856d71ef62" name="State Machine" color="#ff33ff" meeting="false" start="2025-04-08" duration="1" complete="0" expand="true"/>
+                    <task id="25" uid="8ce1759c24b04fa1bec7c6856d71ef62" name="State Machine" color="#ff33ff" meeting="false" start="2025-04-08" duration="1" complete="0" expand="true">
+                        <notes><![CDATA[Implement the state machine.
+
+I had already made a state machine from a previous project so this will just be importing assets and not take up much time at all,
+
+the enemy states I'll be using are patrol, search and attack states. enemy will patrol by default and if attacked or spotting the player the enemy will enter the attack state and begin throwing rocks at the player. if the player goes out of view the enemy enters a search state where it will go to the players last know position, it finds the player it enters the attack state again if not it goes back to its patrol path.]]></notes>
+                    </task>
                 </task>
                 <task id="44" uid="1991e811f7a649f3a70a1c2e3a263fe5" name="Test Enemy AI" color="#ffff33" meeting="false" start="2025-04-09" duration="1" complete="0" expand="true">
+                    <notes><![CDATA[make sure the ai is working properly. and take notes for further improvments later on]]></notes>
                     <depend id="31" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="31" uid="cccbec26aa8241d9a2fde1461b5b9db7" name="Enemy AI complete" color="#ff33ff" meeting="true" start="2025-04-10" duration="0" complete="0" expand="true"/>
@@ -152,21 +190,35 @@
             <depend id="46" type="2" difference="0" hardness="Strong"/>
             <depend id="47" type="2" difference="0" hardness="Strong"/>
             <task id="51" uid="7a553b7faa9f4347813f1e0b405892e0" name="Documentation" color="#00cccc" meeting="false" start="2025-04-10" duration="32" complete="0" expand="true">
-                <task id="52" uid="c48dc4c802c243e1b2ddd6636fbe70b1" name="GDD Version 2.0" color="#00cccc" meeting="false" start="2025-04-10" duration="32" complete="0" expand="true"/>
-                <task id="53" uid="43c3edc75325469ea8e4ae32c062de8f" name="Test Strategy Document" color="#00cccc" meeting="false" start="2025-04-10" duration="7" complete="0" expand="true"/>
-                <task id="54" uid="f75fa18772dd4c0dac7092daf48862ac" name="Sample Use Case Table" color="#00cccc" meeting="false" start="2025-04-17" duration="7" complete="0" expand="true"/>
-                <task id="55" uid="d0aef6bed4ab48a982e8b58b60e197eb" name="Sample 3rd Party Testing Documents" color="#00cccc" meeting="false" start="2025-04-24" duration="8" complete="0" expand="true"/>
+                <task id="52" uid="c48dc4c802c243e1b2ddd6636fbe70b1" name="GDD Version 2.0" color="#00cccc" meeting="false" start="2025-04-10" duration="32" complete="0" expand="true">
+                    <notes><![CDATA[this will be the second version the GDD, it will take everything from the first one and refine it a bit more as well as adding all the features from this iteration,]]></notes>
+                </task>
+                <task id="53" uid="43c3edc75325469ea8e4ae32c062de8f" name="Test Strategy Document" color="#00cccc" meeting="false" start="2025-04-10" duration="7" complete="0" expand="true">
+                    <notes><![CDATA[create a document for test tratagies that will be used in the project]]></notes>
+                </task>
+                <task id="54" uid="f75fa18772dd4c0dac7092daf48862ac" name="Sample Use Case Table" color="#00cccc" meeting="false" start="2025-04-17" duration="7" complete="0" expand="true">
+                    <notes><![CDATA[create use case table for testing]]></notes>
+                </task>
+                <task id="55" uid="d0aef6bed4ab48a982e8b58b60e197eb" name="Sample 3rd Party Testing Documents" color="#00cccc" meeting="false" start="2025-04-24" duration="8" complete="0" expand="true">
+                    <notes><![CDATA[create a microsoft form for player to answers testing questions]]></notes>
+                </task>
             </task>
             <task id="56" uid="917b0bb89d3e4bf3a0f08525ba2c2299" name="Game Version 0.2.0-Alpha" color="#ff33ff" meeting="false" start="2025-04-12" duration="30" complete="0" expand="true">
                 <task id="57" uid="f5e91e772ffe43c18beaa8fc2d74eef3" name="Switches" color="#ff33ff" meeting="false" start="2025-04-12" duration="6" complete="0" expand="true">
                     <depend id="60" type="2" difference="0" hardness="Strong"/>
                     <depend id="72" type="2" difference="0" hardness="Strong"/>
                     <task id="58" uid="2deaf0f8f3c04e97a6fbc0aeb1884502" name="Design switches" color="#0099ff" meeting="false" start="2025-04-12" duration="3" complete="0" expand="true">
+                        <notes><![CDATA[design how the switches will work and put them in the GDD]]></notes>
                         <depend id="59" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="59" uid="bccd66ab262242e2ab5813665fa40af3" name="Implement switches" color="#ff33ff" meeting="false" start="2025-04-15" duration="3" complete="0" expand="true"/>
+                    <task id="59" uid="bccd66ab262242e2ab5813665fa40af3" name="Implement switches" color="#ff33ff" meeting="false" start="2025-04-15" duration="3" complete="0" expand="true">
+                        <notes><![CDATA[Implement the switches into the game..
+
+the switches should work by detecting a collsion with a rock and then toggling a bool that will either open a door or trigger an event.]]></notes>
+                    </task>
                 </task>
                 <task id="60" uid="c1218a90155642218d2efa876fac7a23" name="Test switches" color="#ffff33" meeting="false" start="2025-04-18" duration="1" complete="0" expand="true">
+                    <notes><![CDATA[test if the switches function correctly and have no bugs]]></notes>
                     <depend id="61" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="61" uid="3dd369429cb04950bc7405bd0323c1e0" name="Switches Complete" color="#ff33ff" meeting="true" start="2025-04-19" duration="0" complete="0" expand="true"/>
@@ -176,32 +228,50 @@
                         <depend id="66" type="2" difference="0" hardness="Strong"/>
                         <depend id="73" type="2" difference="0" hardness="Strong"/>
                         <task id="67" uid="d5cef2b6fe694cc0acfa8eb3591c47c7" name="Design Level 2" color="#0099ff" meeting="false" start="2025-04-19" duration="3" complete="0" expand="true">
+                            <notes><![CDATA[design level 2 layout/map and put it in GDD]]></notes>
                             <depend id="63" type="2" difference="0" hardness="Strong"/>
                         </task>
-                        <task id="63" uid="c07afc491b8f4589b80ed99b5175eec0" name="Implement Level 2" color="#ff33ff" meeting="false" start="2025-04-22" duration="3" complete="0" expand="true"/>
+                        <task id="63" uid="c07afc491b8f4589b80ed99b5175eec0" name="Implement Level 2" color="#ff33ff" meeting="false" start="2025-04-22" duration="3" complete="0" expand="true">
+                            <notes><![CDATA[Implement level 2
+
+level 2 will be the labyrinth level, with hidden switches throughout the player must find to open the door at the end.]]></notes>
+                        </task>
                     </task>
                     <task id="66" uid="3149a17a54514476b85d199fec7b0384" name="Test Level 2" color="#ffff33" meeting="false" start="2025-04-25" duration="1" complete="0" expand="true">
+                        <notes><![CDATA[make sure level 2 is bug free, with no areas the player could get out of bounds.]]></notes>
                         <depend id="79" type="2" difference="0" hardness="Strong"/>
                     </task>
                     <task id="73" uid="fd612f609e264272a1cdcaa91d5117dd" name="Level 3" color="#ff33ff" meeting="false" start="2025-04-25" duration="6" complete="0" expand="true">
                         <depend id="68" type="2" difference="0" hardness="Strong"/>
                         <depend id="74" type="2" difference="0" hardness="Strong"/>
                         <task id="69" uid="8f9eaa13dea84bb594145884797d91cd" name="Design Level 3" color="#0099ff" meeting="false" start="2025-04-25" duration="3" complete="0" expand="true">
+                            <notes><![CDATA[Design level 3 map/layout and put it in the GDD]]></notes>
                             <depend id="64" type="2" difference="0" hardness="Strong"/>
                         </task>
-                        <task id="64" uid="43bcad3bd52d47de86d1b283b6db3a86" name="Implement Level 3" color="#ff33ff" meeting="false" start="2025-04-28" duration="3" complete="0" expand="true"/>
+                        <task id="64" uid="43bcad3bd52d47de86d1b283b6db3a86" name="Implement Level 3" color="#ff33ff" meeting="false" start="2025-04-28" duration="3" complete="0" expand="true">
+                            <notes><![CDATA[Implementing level 3
+
+level 3 introduces the ground raise where player must lift themself up using the ability to get switches or reach platforms. this level will have a more vertical design to it and have player climbing a cliff]]></notes>
+                        </task>
                     </task>
                     <task id="68" uid="481855fcdf8749daab50a9e031001efd" name="Test Level 3" color="#ffff33" meeting="false" start="2025-05-01" duration="1" complete="0" expand="true">
+                        <notes><![CDATA[make sure level 3 is bug free, with no areas the player could get out of bounds.]]></notes>
                         <depend id="79" type="2" difference="0" hardness="Strong"/>
                     </task>
                     <task id="74" uid="d4c17a6c47b542ea997fabc6ac337390" name="Level 4" color="#ff33ff" meeting="false" start="2025-05-01" duration="6" complete="0" expand="true">
                         <depend id="71" type="2" difference="0" hardness="Strong"/>
                         <task id="70" uid="7c05b54f55274c96b89ecb3b973c1d19" name="Design Level 4" color="#0099ff" meeting="false" start="2025-05-01" duration="3" complete="0" expand="true">
+                            <notes><![CDATA[Design level 4 and put the map/layout in the gdd]]></notes>
                             <depend id="65" type="2" difference="0" hardness="Strong"/>
                         </task>
-                        <task id="65" uid="a14d582fab3649c18cf33f025b547075" name="Implement Level 4" color="#ff33ff" meeting="false" start="2025-05-04" duration="3" complete="0" expand="true"/>
+                        <task id="65" uid="a14d582fab3649c18cf33f025b547075" name="Implement Level 4" color="#ff33ff" meeting="false" start="2025-05-04" duration="3" complete="0" expand="true">
+                            <notes><![CDATA[implement level 4
+
+level 4 will have the verticallity of level 3, the maze like design of level 2 in some parts and the enemies of level 1. this level will be hard and challenge players abilities that they have learned]]></notes>
+                        </task>
                     </task>
                     <task id="71" uid="6d8d6b45c1d345b4a7943b9882fb0ede" name="Test Level 4" color="#ffff33" meeting="false" start="2025-05-07" duration="1" complete="0" expand="true">
+                        <notes><![CDATA[make sure level 1 is bug free, with enemies navigating it properly. and no areas the player could get out of bounds.]]></notes>
                         <depend id="79" type="2" difference="0" hardness="Strong"/>
                     </task>
                 </task>
@@ -209,13 +279,16 @@
                 <task id="75" uid="2e255b7e4f0944608499cb5c8dbea106" name="Arms Animations" color="#ff33ff" meeting="false" start="2025-05-07" duration="4" complete="0" expand="true">
                     <depend id="80" type="2" difference="0" hardness="Strong"/>
                     <task id="76" uid="7f4f89b98a0f450bb65bbf081a909f7e" name="Design Animations" color="#0099ff" meeting="false" start="2025-05-07" duration="1" complete="0" expand="true">
+                        <notes><![CDATA[design animations for the arms]]></notes>
                         <depend id="77" type="2" difference="0" hardness="Strong"/>
                     </task>
                     <task id="77" uid="72a06cb8b487423b8e560ce62bf859ad" name="Implement Animations" color="#ff33ff" meeting="false" start="2025-05-08" duration="3" complete="0" expand="true">
+                        <notes><![CDATA[implement the animations for the arms that work with the abilities as a visual guide]]></notes>
                         <depend id="78" type="2" difference="0" hardness="Strong"/>
                     </task>
                 </task>
                 <task id="78" uid="01cd95a1eea241eeb95f0290367c0d06" name="Test Animations" color="#ffff33" meeting="false" start="2025-05-11" duration="1" complete="0" expand="true">
+                    <notes><![CDATA[make sure the animations work correctly ]]></notes>
                     <depend id="80" type="2" difference="0" hardness="Strong"/>
                 </task>
             </task>
@@ -226,7 +299,7 @@
             <depend id="46" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="46" uid="50fd01d4d8d448d3ad8d2bffc65e28aa" name="Iteration 3" color="#00ff00" meeting="false" start="2025-05-12" duration="20" complete="0" expand="true">
-            <notes><![CDATA[this phase will be dedicated too polishing features and finishing remaining documentation and the evaluation. at the current moment this part of the project is uncertain on what will be needed to polish]]></notes>
+            <notes><![CDATA[this phase will be dedicated too polishing features and finishing remaining documentation and the evaluation. at the current moment this part of the project is uncertain on what will be needed to polish. this phase is also dedicated to adding anything that may have been overlooked or needs a rework.]]></notes>
             <depend id="48" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="34" uid="433c8d540f7d4d0cb9ae60d42eb54d18" name="GDD Submission" color="#ff0033" meeting="true" start="2025-05-16" duration="0" complete="0" expand="true"/>
