@@ -1,0 +1,71 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
+
+public class MenuManager : MonoBehaviour
+{
+    //private fields
+    [HideInInspector]
+    public bool gamePaused = false;
+
+    //start game paused or not
+    [SerializeField]
+    private bool startPaused;
+
+    //menu objects
+    [Header("Menus (only applicable too scenes with a PlayerUI)")]
+    [SerializeField]
+    private GameObject pauseMenu;
+    [SerializeField]
+    private GameObject playerUI;
+
+    private void Start()
+    {
+        //makes sure game time is running at start of level
+        if (startPaused)
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("DemoLevel");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void PauseGame()
+    {
+        //unlock cursor
+        UnityEngine.Cursor.lockState = CursorLockMode.None;
+        UnityEngine.Cursor.visible = true;
+
+        if (!gamePaused)
+        {
+            gamePaused = true;
+            pauseMenu.SetActive(true);
+            playerUI.SetActive(false);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            gamePaused = false;
+            pauseMenu.SetActive(false);
+            playerUI.SetActive(true);
+            Time.timeScale = 1;
+        }
+    }
+
+}
