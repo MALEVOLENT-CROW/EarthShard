@@ -37,7 +37,7 @@ public class LocomotionSimpleAgent : MonoBehaviour
         if (Time.deltaTime > 1e-5f)
             velocity = smoothDeltaPosition / Time.deltaTime;
 
-        bool shouldMove = velocity.magnitude > 0.5f && agent.remainingDistance > agent.radius;
+        bool shouldMove = velocity.magnitude > 0.1f && agent.remainingDistance > agent.radius;
 
         // Update animation parameters
         anim.SetBool("move", shouldMove);
