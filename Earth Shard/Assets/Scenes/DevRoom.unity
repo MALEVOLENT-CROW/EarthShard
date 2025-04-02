@@ -2627,6 +2627,7 @@ Transform:
   m_Children:
   - {fileID: 7831278377619066028}
   - {fileID: 4338459755389307625}
+  - {fileID: 5468959675249343351}
   m_Father: {fileID: 1357216419724808249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &912347262048020751
@@ -2883,6 +2884,7 @@ GameObject:
   - component: {fileID: 4915082989529696840}
   - component: {fileID: 4915082989529696842}
   - component: {fileID: 4915082989529696841}
+  - component: {fileID: 4915082989529696843}
   m_Layer: 0
   m_Name: Golem
   m_TagString: Untagged
@@ -3610,8 +3612,7 @@ Transform:
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5468959675249343351}
+  m_Children: []
   m_Father: {fileID: 844400527295284406}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4399433170739640130
@@ -3842,7 +3843,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2.5
-  m_BaseOffset: 0
+  m_BaseOffset: -0.15
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &4915082989529696841
@@ -3869,6 +3870,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a6a1946f8619c479d9a428a339c7e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4915082989529696843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845945367484828291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3824f9416366e40409bcd2c73dd59942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 6836541064255243520}
+  lookAtTargetPosition: {x: 0, y: 0, z: 0}
+  lookAtCoolTime: 0.2
+  lookAtHeatTime: 0.2
+  looking: 1
 --- !u!1 &5003316936724203017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4056,7 +4074,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4338459755389307625}
+  m_Father: {fileID: 844400527295284406}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5523566204252057822
 Transform:
