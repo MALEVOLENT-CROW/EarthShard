@@ -73,7 +73,7 @@ public class GroundRaise : MonoBehaviour
     private void SpawnPlatform()
     {
         //instantiate platform at players pos (adjust y value for player height)
-        Vector3 spawnPosition = playerTransform.position + Vector3.down * 5f;
+        Vector3 spawnPosition = playerTransform.position + Vector3.down * 7f;
         currentPlatform = Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
         
         //face platform same direction as player
