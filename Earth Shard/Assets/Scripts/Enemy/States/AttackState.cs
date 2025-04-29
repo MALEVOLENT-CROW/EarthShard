@@ -27,7 +27,7 @@ public class AttackState : BaseState
 
             if (shotTimer > enemy.fireRate)
             {
-                //Shoot();
+                Shoot();
             }
 
             //move to random pos after a random time
