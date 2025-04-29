@@ -2882,9 +2882,10 @@ GameObject:
   - component: {fileID: 1357216419724808249}
   - component: {fileID: 4915082989529696835}
   - component: {fileID: 4915082989529696840}
-  - component: {fileID: 4915082989529696842}
   - component: {fileID: 4915082989529696841}
-  - component: {fileID: 4915082989529696843}
+  - component: {fileID: 4915082989529696846}
+  - component: {fileID: 4915082989529696845}
+  - component: {fileID: 4915082989529696844}
   m_Layer: 0
   m_Name: Golem
   m_TagString: Untagged
@@ -2900,7 +2901,7 @@ SkinnedMeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601743146462244577}
   m_Enabled: 1
-  m_CastShadows: 3
+  m_CastShadows: 2
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -3862,7 +3863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33e4c0d8c1cdedd46984428f62961d6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4915082989529696842
+--- !u!114 &4915082989529696844
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3871,10 +3872,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 1845945367484828291}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64a6a1946f8619c479d9a428a339c7e7, type: 3}
+  m_Script: {fileID: 11500000, guid: ca670c50af5f0144faa806af3d9e20f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4915082989529696843
+--- !u!114 &4915082989529696845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845945367484828291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68a5c18ca016fc45a3350c31851e43f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: {fileID: 0}
+  sightDistance: 20
+  fieldOfView: 180
+  eyeHeight: 1.5
+  firePoint: {fileID: 0}
+  fireRate: 0.1
+  bulletVelocity: 40
+  currentState: 
+--- !u!114 &4915082989529696846
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

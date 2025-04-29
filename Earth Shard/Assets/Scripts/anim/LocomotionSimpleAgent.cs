@@ -44,7 +44,8 @@ public class LocomotionSimpleAgent : MonoBehaviour
         anim.SetFloat("velx", velocity.x);
         anim.SetFloat("vely", velocity.y);
 
-        GetComponent<LookAt>().lookAtTargetPosition = agent.steeringTarget + transform.forward;
+        //enable later
+        //GetComponent<LookAt>().lookAtTargetPosition = agent.steeringTarget + transform.forward;
 
         // Pull agent towards character
         if (worldDeltaPosition.magnitude > agent.radius)

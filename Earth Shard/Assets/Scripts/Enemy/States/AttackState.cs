@@ -21,7 +21,9 @@ public class AttackState : BaseState
             losePlayerTimer = 0;
             moveTimer += Time.deltaTime;
             shotTimer += Time.deltaTime;
-            enemy.transform.LookAt(enemy.Player.transform);//always look at player in this state
+
+            Vector3 targetPos = new Vector3(enemy.Player.transform.position.x, enemy.transform.position.y, enemy.Player.transform.position.z);
+            enemy.transform.LookAt(targetPos);//always look at player in this state
 
             if (shotTimer > enemy.fireRate)
             {
