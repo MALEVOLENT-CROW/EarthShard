@@ -1414,7 +1414,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 0
@@ -3687,6 +3687,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2472868615399679429, guid: f0e38755a7957ee489f443cc51a473bd, type: 3}
+      propertyPath: m_Lens.NearClipPlane
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424861940112287953, guid: f0e38755a7957ee489f443cc51a473bd, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0f77ac3f4c737884ca959c74aef80a9d, type: 2}
     - target: {fileID: 6621360776711102367, guid: f0e38755a7957ee489f443cc51a473bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.47
@@ -3731,6 +3739,10 @@ PrefabInstance:
       propertyPath: platformPrefab
       value: 
       objectReference: {fileID: 6625709823891690098, guid: 731b6f92439616d4798ae273a6da589e, type: 3}
+    - target: {fileID: 8846931224486807621, guid: f0e38755a7957ee489f443cc51a473bd, type: 3}
+      propertyPath: m_TagString
+      value: Arms
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -11,6 +11,7 @@ public class RockThrow : MonoBehaviour
     private GameObject projectileInst;
     private RockProjectile projectileProperties;
     private Rigidbody projectileRB;
+    private Animator animator;
 
     [SerializeField] private float projectileForce = 10.0f;
    
@@ -25,6 +26,8 @@ public class RockThrow : MonoBehaviour
         inputManager = GameObject.FindWithTag("Player").GetComponent<InputManager>();
 
         rockThrower = GetComponent<Transform>();
+
+        animator = GameObject.FindWithTag("Arms").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -60,6 +63,8 @@ public class RockThrow : MonoBehaviour
 
     private void shootRock()
     {
+        animator.Play("Shoot");
+
         projectileProperties.held = false;
         projectileRB.AddForce(transform.forward * projectileForce);
 
