@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04fa4840a853f204cbdd9823d58360be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platformPrefab: {fileID: 1471554067410917551, guid: f168bba5001e9fe40bcca52efb179587, type: 3}
+  platformPrefab: {fileID: 6625709823891690098, guid: 731b6f92439616d4798ae273a6da589e, type: 3}
   maxHeight: 5
   speed: 5
   slowFactor: 1
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
-    NearClipPlane: 0.3
+    NearClipPlane: 0.01
     FarClipPlane: 1000
     Dutch: 0
     ModeOverride: 0
@@ -397,6 +397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerArms
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d8094bc305841c146b8df4ba64a74b13, type: 3}
+      propertyPath: m_TagString
+      value: Arms
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -425,7 +429,7 @@ Animator:
   m_GameObject: {fileID: 8846931224486807621}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 69e512d84e0cf5546a3365d8b4ad0e42, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0f77ac3f4c737884ca959c74aef80a9d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
