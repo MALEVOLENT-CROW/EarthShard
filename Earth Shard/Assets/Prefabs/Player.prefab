@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7414783768663481577}
   - component: {fileID: 2490448025001114578}
   - component: {fileID: 8620856250798671516}
+  - component: {fileID: 1919638387335403981}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -104,6 +105,21 @@ MonoBehaviour:
   speed: 10
   gravity: -9.8
   jumpHeight: 2
+--- !u!114 &1919638387335403981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781268425836621919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdf38df4e5f41e4d93285c7a0ed751d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rockThrowGO: {fileID: 3906724972968979242}
+  groundRaiseGO: {fileID: 2921725263252164690}
+  lockSwitching: 0
 --- !u!1 &2921725263252164690
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,8 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3496042785360554889}
   - component: {fileID: 2472868615399679429}
-  - component: {fileID: 8505125331857181894}
-  - component: {fileID: 8527897454944652430}
+  - component: {fileID: 4926570197706236121}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: Untagged
@@ -319,7 +334,7 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1613896509565453165}
---- !u!81 &8505125331857181894
+--- !u!81 &4926570197706236121
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -327,20 +342,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7212036914515506983}
   m_Enabled: 1
---- !u!114 &8527897454944652430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7212036914515506983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebdf38df4e5f41e4d93285c7a0ed751d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rockThrowGO: {fileID: 3906724972968979242}
-  groundRaiseGO: {fileID: 2921725263252164690}
 --- !u!1001 &8505035538591659284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -400,6 +401,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d8094bc305841c146b8df4ba64a74b13, type: 3}
       propertyPath: m_TagString
       value: Arms
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179423003351100845, guid: d8094bc305841c146b8df4ba64a74b13, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -52.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
