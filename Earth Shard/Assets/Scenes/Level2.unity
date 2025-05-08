@@ -11570,6 +11570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1919638387335403981, guid: f0e38755a7957ee489f443cc51a473bd, type: 3}
+      propertyPath: lockSwitching
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6621360776711102367, guid: f0e38755a7957ee489f443cc51a473bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.002478
