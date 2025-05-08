@@ -11,7 +11,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 2085700451698413304}
-    m_Position: {x: 410, y: 10, z: 0}
+    m_Position: {x: 410, y: -30, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5692658608628859954}
     m_Position: {x: 410, y: 110, z: 0}
@@ -36,32 +36,24 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: -2462987048499481074, guid: 0da9f3cbf4767204e9a8e6e9cad96e41, type: 3}
     m_Threshold: 0
-    m_Position: {x: 0.00031419093, y: 0.6384967}
-    m_TimeScale: 0.88942736
+    m_Position: {x: 0.0003141834, y: 0.63849676}
+    m_TimeScale: 0.8353993
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -2462987048499481074, guid: 6c9a1e5e48cd4c941a60cf2d343aa29c, type: 3}
     m_Threshold: 0.125
-    m_Position: {x: -0.45308933, y: 0.4511496}
-    m_TimeScale: 0.88817805
+    m_Position: {x: -0.4530893, y: 0.4511496}
+    m_TimeScale: 0.8342259
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -2462987048499481074, guid: f945740132b96584ca10157e4f156fe6, type: 3}
     m_Threshold: 0.25
-    m_Position: {x: 0.45358244, y: 0.451595}
-    m_TimeScale: 0.887257
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Blend
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: -2462987048499481074, guid: 8d0c36f6f0e374d44a56e1a78af0d7f9, type: 3}
-    m_Threshold: 0.375
-    m_Position: {x: -0.00038152497, y: -0.6347}
-    m_TimeScale: 0.8947477
+    m_Position: {x: 0.45358247, y: 0.451595}
+    m_TimeScale: 0.8333608
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
@@ -74,34 +66,18 @@ BlendTree:
     m_DirectBlendParameter: velx
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -2462987048499481074, guid: 505211a3628670e41b521e5e8d74a12e, type: 3}
-    m_Threshold: 0.625
-    m_Position: {x: -0.45371622, y: -0.44909638}
-    m_TimeScale: 0.8895717
-    m_CycleOffset: 0
-    m_DirectBlendParameter: velx
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: -2462987048499481074, guid: 412f85bfce82a284d9d9d4b231d7b955, type: 3}
-    m_Threshold: 0.75
-    m_Position: {x: 0.45317617, y: -0.44848147}
-    m_TimeScale: 0.8907109
-    m_CycleOffset: 0
-    m_DirectBlendParameter: velx
-    m_Mirror: 0
-  - serializedVersion: 2
     m_Motion: {fileID: -2462987048499481074, guid: 01c0a09297e9e3740a027af04df97d60, type: 3}
     m_Threshold: 0.875
-    m_Position: {x: -0.64113325, y: -0.00014931177}
-    m_TimeScale: 0.8857699
+    m_Position: {x: -0.64113325, y: -0.00014927192}
+    m_TimeScale: 0.8319641
     m_CycleOffset: 0
     m_DirectBlendParameter: velx
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -2462987048499481074, guid: 7acc1000120716b4197a8232f2b9f090, type: 3}
     m_Threshold: 1
-    m_Position: {x: 0.64131504, y: -0.0000040013574}
-    m_TimeScale: 0.8855187
+    m_Position: {x: 0.6413151, y: -0.0000040377954}
+    m_TimeScale: 0.83172816
     m_CycleOffset: 0
     m_DirectBlendParameter: velx
     m_Mirror: 0
@@ -112,7 +88,7 @@ BlendTree:
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 1
---- !u!1101 &-1147713377301753735
+--- !u!1101 &-313867366321394395
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,18 +96,18 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
+  - m_ConditionMode: 2
     m_ConditionEvent: move
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 2085700451698413304}
+  m_DstState: {fileID: 5692658608628859954}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.1
+  m_TransitionDuration: 0.25
   m_TransitionOffset: 0
-  m_ExitTime: 0.9234694
+  m_ExitTime: 0.8897059
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -177,31 +153,6 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1101 &1637501779899090865
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: move
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 5692658608628859954}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.1
-  m_TransitionOffset: 0
-  m_ExitTime: 0.8897059
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1102 &2085700451698413304
 AnimatorState:
   serializedVersion: 6
@@ -213,7 +164,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 1637501779899090865}
+  - {fileID: -313867366321394395}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -229,6 +180,31 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &2418928314642387077
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: move
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 2085700451698413304}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.25
+  m_TransitionOffset: 0
+  m_ExitTime: 0.90625
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1102 &5692658608628859954
 AnimatorState:
   serializedVersion: 6
@@ -240,7 +216,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: -1147713377301753735}
+  - {fileID: 2418928314642387077}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
