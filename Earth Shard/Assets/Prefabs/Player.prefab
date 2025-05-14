@@ -119,6 +119,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rockThrowGO: {fileID: 3906724972968979242}
   groundRaiseGO: {fileID: 2921725263252164690}
+  rockThrowUI: {fileID: 0}
+  groundRaiseUI: {fileID: 0}
   lockSwitching: 0
 --- !u!1 &2921725263252164690
 GameObject:
@@ -214,6 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileGO: {fileID: 5876966904170540126, guid: bb3775d5ea004b94fa3fb4ab98e14f92, type: 3}
   projectileForce: 500
+  projectileUpForce: 50
 --- !u!1 &5107107885376062390
 GameObject:
   m_ObjectHideFlags: 0

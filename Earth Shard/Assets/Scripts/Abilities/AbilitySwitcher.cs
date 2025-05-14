@@ -5,9 +5,15 @@ using UnityEngine;
 public class AbilitySwitcher : MonoBehaviour
 {
     private InputManager inputManager;
+    [Header("Game Objects")]
     [SerializeField] private GameObject rockThrowGO;
     [SerializeField] private GameObject groundRaiseGO;
 
+    [Header("Crosshair UI")]
+    [SerializeField] private GameObject rockThrowUI;
+    [SerializeField] private GameObject groundRaiseUI;
+
+    [Header("Other")]
     [SerializeField] private bool lockSwitching = false;
 
     // Start is called before the first frame update
@@ -29,14 +35,23 @@ public class AbilitySwitcher : MonoBehaviour
             {
                 if(rockThrowGO.activeSelf == true)
                 {
+                    //abilities
                     rockThrowGO.SetActive(!rockThrowGO.activeSelf);
                     groundRaiseGO.SetActive(!groundRaiseGO.activeSelf);
+
+                    //UI
+                    rockThrowUI.SetActive(!rockThrowUI.activeSelf);
+                    groundRaiseUI.SetActive(!groundRaiseUI.activeSelf);
                 }
                 else if(groundRaiseGO.activeSelf == true)
                 {
-
+                    //abilities
                     groundRaiseGO.SetActive(!groundRaiseGO.activeSelf);
                     rockThrowGO.SetActive(!rockThrowGO.activeSelf);
+
+                    //UI
+                    rockThrowUI.SetActive(!rockThrowUI.activeSelf);
+                    groundRaiseUI.SetActive(!groundRaiseUI.activeSelf);
                 }
             }
             else

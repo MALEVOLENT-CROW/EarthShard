@@ -14,6 +14,7 @@ public class RockThrow : MonoBehaviour
     private Animator animator;
 
     [SerializeField] private float projectileForce = 10.0f;
+    [SerializeField] private float projectileUpForce = 1f;
    
     private bool spawned = false;
 
@@ -67,6 +68,7 @@ public class RockThrow : MonoBehaviour
 
         projectileProperties.held = false;
         projectileRB.AddForce(transform.forward * projectileForce);
+        projectileRB.AddForce(transform.up * projectileUpForce);
 
         spawned = false;
     }

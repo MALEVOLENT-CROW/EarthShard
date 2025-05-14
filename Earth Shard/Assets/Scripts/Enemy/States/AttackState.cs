@@ -60,11 +60,13 @@ public class AttackState : BaseState
         //instance new bullet
         GameObject Bullet = GameObject.Instantiate(Resources.Load("Prefabs/Bullet") as GameObject, firePoint.position, enemy.transform.rotation);
 
-        //calculate dir to player
-        Vector3 shootDirection = (enemy.Player.transform.position - firePoint.transform.position).normalized;
+        //calculate dir to player (+ aim above player slightly to angle shots)
+        Vector3 shootDirection = (enemy.Player.transform.position - firePoint.transform.position).normalized + new Vector3(0,0.2f,0);
 
         //add force to rigidbody of bullet
         Bullet.GetComponent<Rigidbody>().velocity = Quaternion.AngleAxis(Random.Range(-3f, 3f),Vector3.up) * shootDirection * enemy.bulletVelocity;
+
+        
 
         Debug.Log("PewPew");
         shotTimer = 0;
