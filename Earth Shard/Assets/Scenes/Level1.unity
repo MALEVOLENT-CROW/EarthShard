@@ -8029,6 +8029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4961068362590893107, guid: f0e38755a7957ee489f443cc51a473bd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6621360776711102367, guid: f0e38755a7957ee489f443cc51a473bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.7
@@ -8073,6 +8077,10 @@ PrefabInstance:
       propertyPath: projectileGO
       value: 
       objectReference: {fileID: 5876966904170540126, guid: bb3775d5ea004b94fa3fb4ab98e14f92, type: 3}
+    - target: {fileID: 8846931224486807621, guid: f0e38755a7957ee489f443cc51a473bd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
