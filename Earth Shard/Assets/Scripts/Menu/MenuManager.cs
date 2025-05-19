@@ -11,6 +11,10 @@ public class MenuManager : MonoBehaviour
     [HideInInspector]
     public bool gamePaused = false;
 
+    //Cam
+    [SerializeField]
+    private Animator camAnimator;
+
     //start game paused or not
     [SerializeField]
     private bool startPaused;
@@ -22,6 +26,10 @@ public class MenuManager : MonoBehaviour
     [SerializeField]
     private GameObject playerUI;
 
+    //menu trans controls
+    private bool credits;
+    private bool levelSelect;
+
     private void Start()
     {
         //makes sure game time is running at start of level
@@ -31,9 +39,22 @@ public class MenuManager : MonoBehaviour
             Time.timeScale = 1;
     }
 
-    public void StartGame()
+    public void StartLevel1()
     {
-        SceneManager.LoadScene("DemoLevel");
+        SceneManager.LoadScene("Level1");
+    }
+
+    public void StartLevel2()
+    {
+        SceneManager.LoadScene("Level2");
+    }
+    public void StartLevel3()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void StartLevel4()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
@@ -66,6 +87,18 @@ public class MenuManager : MonoBehaviour
             playerUI.SetActive(true);
             Time.timeScale = 1;
         }
+    }
+
+    public void LevelSelectTrans()
+    {
+        levelSelect = !levelSelect;
+        camAnimator.SetBool("LevelSelect", levelSelect);
+    }
+
+    public void CreditsTrans()
+    {
+        credits = !credits;
+        camAnimator.SetBool("Credits", credits);
     }
 
 }
