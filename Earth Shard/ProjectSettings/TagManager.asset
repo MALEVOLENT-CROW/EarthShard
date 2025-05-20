@@ -8,6 +8,7 @@ TagManager:
   - Arms
   - OnState
   - OffState
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - Interactable
   - Switch
   - PlayerProjectile
-  - 
-  - 
+  - EnemyBullet
+  - Enemy
   - 
   - 
   - 

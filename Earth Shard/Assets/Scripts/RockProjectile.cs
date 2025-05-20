@@ -14,6 +14,8 @@ public class RockProjectile : MonoBehaviour
 
     public bool held;
 
+    [SerializeField] private float attackDamage = 10f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,12 @@ public class RockProjectile : MonoBehaviour
     {
         if (!held)
         {
+            GameObject hitGO = collision.gameObject;
+            if(hitGO.CompareTag("Enemy"))
+            {
+                hitGO.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
+            }
+
             GameObject impactGO = Instantiate(impactEffect, transform.position, transform.rotation * Quaternion.Euler(0f, 180f, 0f));
             Destroy(impactGO, 2f);
 
