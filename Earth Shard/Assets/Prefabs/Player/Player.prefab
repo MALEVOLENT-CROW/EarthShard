@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2490448025001114578}
   - component: {fileID: 8620856250798671516}
   - component: {fileID: 1919638387335403981}
+  - component: {fileID: 3967877911686439084}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -122,6 +123,29 @@ MonoBehaviour:
   rockThrowUI: {fileID: 0}
   groundRaiseUI: {fileID: 0}
   lockSwitching: 0
+--- !u!114 &3967877911686439084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781268425836621919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ae2e430e7d114a87e865ca7284f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthFull: 0
+  menuManager: {fileID: 0}
+  playerUI: {fileID: 0}
+  deathScreen: {fileID: 0}
+  maxHealth: 100
+  damageOverlay: {fileID: 0}
+  damageDuration: 0.75
+  damageFadeSpeed: 1.5
+  healOverlay: {fileID: 0}
+  healDuration: 0.75
+  healFadeSpeed: 1.5
 --- !u!1 &2921725263252164690
 GameObject:
   m_ObjectHideFlags: 0

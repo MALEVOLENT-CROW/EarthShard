@@ -55,7 +55,11 @@ public class SwitchBoard : MonoBehaviour
         if ((switch1.active == true && switch2.active == true && switch3.active == true) && allActive == false)
         {
             allActive = true;
-            door.SetBool("IsOpen", allActive);
+
+            if(door != null)
+            {
+                door.SetBool("IsOpen", allActive);
+            }
         }
 
     }
