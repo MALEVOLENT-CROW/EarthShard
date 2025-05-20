@@ -22,6 +22,10 @@ public class SwitchBoard : MonoBehaviour
     [SerializeField] private GameObject offStateGem2;
     [SerializeField] private GameObject offStateGem3;
 
+    //get door
+    [Header("Door Animator")]
+    [SerializeField] private Animator door;
+
     //all active
     private bool allActive = false;
 
@@ -50,8 +54,8 @@ public class SwitchBoard : MonoBehaviour
 
         if ((switch1.active == true && switch2.active == true && switch3.active == true) && allActive == false)
         {
-            Debug.Log("open door!");
             allActive = true;
+            door.SetBool("IsOpen", allActive);
         }
 
     }

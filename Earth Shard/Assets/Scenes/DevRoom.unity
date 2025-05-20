@@ -4347,8 +4347,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1781268425836621919, guid: f0e38755a7957ee489f443cc51a473bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3890749608576315610}
   m_SourcePrefab: {fileID: 100100000, guid: f0e38755a7957ee489f443cc51a473bd, type: 3}
+--- !u!1 &3890749608576315609 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1781268425836621919, guid: f0e38755a7957ee489f443cc51a473bd, type: 3}
+  m_PrefabInstance: {fileID: 3890749608576315608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3890749608576315610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890749608576315609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ae2e430e7d114a87e865ca7284f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthFull: 0
+  menuManager: {fileID: 0}
+  playerUI: {fileID: 0}
+  deathScreen: {fileID: 0}
+  maxHealth: 100
+  chipSpeed: 2
+  frontHealthBar: {fileID: 0}
+  backHealthBar: {fileID: 0}
+  currentHealthText: {fileID: 0}
+  maxHealthText: {fileID: 0}
+  damageOverlay: {fileID: 0}
+  damageDuration: 0
+  damageFadeSpeed: 0
+  healOverlay: {fileID: 0}
+  healDuration: 0
+  healFadeSpeed: 0
 --- !u!1 &4078383247422775867
 GameObject:
   m_ObjectHideFlags: 0
@@ -4630,7 +4666,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845945367484828291}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca670c50af5f0144faa806af3d9e20f0, type: 3}
   m_Name: 
@@ -4642,7 +4678,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845945367484828291}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e68a5c18ca016fc45a3350c31851e43f, type: 3}
   m_Name: 
