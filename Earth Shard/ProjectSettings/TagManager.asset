@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Thrower
   - Arms
+  - OnState
+  - OffState
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - Platform
   - Environment
   - Interactable
-  - 
-  - 
+  - Switch
+  - PlayerProjectile
   - 
   - 
   - 
