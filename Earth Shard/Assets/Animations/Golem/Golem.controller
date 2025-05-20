@@ -11,7 +11,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 2085700451698413304}
-    m_Position: {x: 410, y: -30, z: 0}
+    m_Position: {x: 410, y: -10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5692658608628859954}
     m_Position: {x: 410, y: 110, z: 0}
@@ -36,24 +36,24 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: -2462987048499481074, guid: 0da9f3cbf4767204e9a8e6e9cad96e41, type: 3}
     m_Threshold: 0
-    m_Position: {x: 0.0003141834, y: 0.63849676}
-    m_TimeScale: 0.8353993
+    m_Position: {x: 0, y: 1}
+    m_TimeScale: 2
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -2462987048499481074, guid: 6c9a1e5e48cd4c941a60cf2d343aa29c, type: 3}
     m_Threshold: 0.125
-    m_Position: {x: -0.4530893, y: 0.4511496}
-    m_TimeScale: 0.8342259
+    m_Position: {x: -0.74, y: 0.64}
+    m_TimeScale: 2
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -2462987048499481074, guid: f945740132b96584ca10157e4f156fe6, type: 3}
     m_Threshold: 0.25
-    m_Position: {x: 0.45358247, y: 0.451595}
-    m_TimeScale: 0.8333608
+    m_Position: {x: 0.67, y: 0.68}
+    m_TimeScale: 2
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
@@ -61,23 +61,23 @@ BlendTree:
     m_Motion: {fileID: -2462987048499481074, guid: 706ffdd5ab8045a488fac8d82541bb95, type: 3}
     m_Threshold: 0.5
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
+    m_TimeScale: 2
     m_CycleOffset: 0
     m_DirectBlendParameter: velx
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -2462987048499481074, guid: 01c0a09297e9e3740a027af04df97d60, type: 3}
     m_Threshold: 0.875
-    m_Position: {x: -0.64113325, y: -0.00014927192}
-    m_TimeScale: 0.8319641
+    m_Position: {x: -1.1, y: -0.04}
+    m_TimeScale: 2
     m_CycleOffset: 0
     m_DirectBlendParameter: velx
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -2462987048499481074, guid: 7acc1000120716b4197a8232f2b9f090, type: 3}
     m_Threshold: 1
-    m_Position: {x: 0.6413151, y: -0.0000040377954}
-    m_TimeScale: 0.83172816
+    m_Position: {x: 1.02, y: -0.06}
+    m_TimeScale: 2
     m_CycleOffset: 0
     m_DirectBlendParameter: velx
     m_Mirror: 0
