@@ -33,7 +33,7 @@ public class AttackState : BaseState
             //move to random pos after a random time
             if (moveTimer > Random.Range(4, 10))
             {
-                enemy.Agent.SetDestination(enemy.transform.position + (Random.insideUnitSphere * 5));
+                enemy.Agent.SetDestination(enemy.transform.position + (Random.insideUnitSphere * 12));
                 moveTimer = 0;
             }
             enemy.LastKnowPos = enemy.Player.transform.position;

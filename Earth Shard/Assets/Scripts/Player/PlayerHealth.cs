@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
     public float passiveHealAmount = 10;
 
     //private fields
-    private float health;
+    [SerializeField]private float health;
     private float timeSinceLastDmg;
     private float second;
 
@@ -38,17 +38,19 @@ public class PlayerHealth : MonoBehaviour
     public float damageFadeSpeed;
     private float damageDurationTimer;
 
+    /*
     [Header("Heal Overlay")]
     public Image healOverlay;
     public float healDuration;
     public float healFadeSpeed;
     private float healDurationTimer;
+    */
 
     void Start()
     {
         health = maxHealth;
         damageOverlay.color = new Color(damageOverlay.color.r, damageOverlay.color.g, damageOverlay.color.b, 0);
-        healOverlay.color = new Color(healOverlay.color.r, healOverlay.color.g, healOverlay.color.b, 0);
+        //healOverlay.color = new Color(healOverlay.color.r, healOverlay.color.g, healOverlay.color.b, 0);
     }
 
     // Update is called once per frame
@@ -66,6 +68,7 @@ public class PlayerHealth : MonoBehaviour
             Die();
         }
 
+        /*
         //heal overlay
         if(healOverlay.color.a > 0)
         {
@@ -77,7 +80,7 @@ public class PlayerHealth : MonoBehaviour
                 tempAplhaHeal -= Time.deltaTime * healFadeSpeed;
                 healOverlay.color = new Color(healOverlay.color.r, healOverlay.color.g, healOverlay.color.b, tempAplhaHeal);
             }
-        }
+        }*/
 
         //dmg overlay
         if(damageOverlay.color.a > 0)
@@ -116,8 +119,8 @@ public class PlayerHealth : MonoBehaviour
     public void HealHealth(float heal)
     {
         health += heal;
-        healDurationTimer = 0f;
-        healOverlay.color = new Color(healOverlay.color.r, healOverlay.color.g, healOverlay.color.b, 1);
+        //healDurationTimer = 0f;
+        //healOverlay.color = new Color(healOverlay.color.r, healOverlay.color.g, healOverlay.color.b, 1);
     }
 
     private void PassiveHeal(float heal)
