@@ -8,6 +8,7 @@ public class RockProjectile : MonoBehaviour
     private Transform rockPos;
     [SerializeField] private Transform throwerPos;
     [SerializeField] private GameObject impactEffect;
+    [SerializeField] private AudioClip[] impactSound;
 
     private MeshCollider rockCol;
     private Rigidbody rb;
@@ -28,7 +29,7 @@ public class RockProjectile : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (held)
+        if(held)
         {
             HoldRock();
         }
@@ -45,7 +46,7 @@ public class RockProjectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!held)
+        if(!held)
         {
             GameObject hitGO = collision.gameObject;
             if(hitGO.CompareTag("Enemy"))
@@ -53,6 +54,7 @@ public class RockProjectile : MonoBehaviour
                 hitGO.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
             }
 
+            AudioSource.PlayClipAtPoint(impactSound[Random.Range(0, impactSound.Length - 1)], transform.position);
             GameObject impactGO = Instantiate(impactEffect, transform.position, transform.rotation * Quaternion.Euler(0f, 180f, 0f));
             Destroy(impactGO, 2f);
 
