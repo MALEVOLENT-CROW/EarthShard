@@ -15,8 +15,10 @@ public class RockThrow : MonoBehaviour
 
     [SerializeField] private float projectileForce = 10.0f;
     [SerializeField] private float projectileUpForce = 1f;
+    [SerializeField] private float shootInterval = 1.5f;
    
     private bool spawned = false;
+    private float seconds;
 
     private Transform rockThrower;
 
@@ -34,9 +36,12 @@ public class RockThrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (spawned == false && inputManager.player.ShootAlt.triggered)
+        seconds += Time.deltaTime;
+
+        if (spawned == false && inputManager.player.ShootAlt.triggered && seconds > shootInterval)
         {
             spawnRock();
+            seconds = 0;
         }
 
         if (spawned == true && inputManager.player.Shoot.triggered)

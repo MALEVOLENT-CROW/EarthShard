@@ -100,7 +100,7 @@ public class PlayerHealth : MonoBehaviour
         //updates time since last damage was taken
         timeSinceLastDmg += Time.deltaTime;
         //starts passive heal
-        if(health < 100 && timeSinceLastDmg >= passiveHealInterval)
+        if(health < maxHealth && timeSinceLastDmg >= passiveHealInterval)
         {
             PassiveHeal(passiveHealAmount);
         }

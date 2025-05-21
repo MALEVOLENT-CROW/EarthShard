@@ -2227,12 +2227,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 0}
-  sightDistance: 20
+  sightDistance: 35
   fieldOfView: 180
   eyeHeight: 1.5
   firePoint: {fileID: 4810860831360897066}
-  fireRate: 2
-  bulletVelocity: 15
+  fireRate: 1.5
+  bulletVelocity: 20
   currentState: 
 --- !u!114 &6060347451881286325
 MonoBehaviour:

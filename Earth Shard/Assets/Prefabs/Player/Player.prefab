@@ -89,8 +89,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 2472868615399679429}
-  xSensitvity: 50
-  ySensitvity: 50
+  xSensitvity: 40
+  ySensitvity: 40
 --- !u!114 &8620856250798671516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,9 +103,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2600f2d5a1b664c458fdd9aecef893c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 7
   gravity: -9.8
-  jumpHeight: 2
+  jumpHeight: 1.5
 --- !u!114 &1919638387335403981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
   groundRaiseGO: {fileID: 2921725263252164690}
   rockThrowUI: {fileID: 0}
   groundRaiseUI: {fileID: 0}
-  lockSwitching: 0
+  lockSwitching: 1
 --- !u!114 &3967877911686439084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,16 +138,14 @@ MonoBehaviour:
   healthFull: 0
   passiveHealInterval: 10
   passiveHealAmount: 10
+  health: 0
   menuManager: {fileID: 0}
   playerUI: {fileID: 0}
   deathScreen: {fileID: 0}
-  maxHealth: 100
+  maxHealth: 60
   damageOverlay: {fileID: 0}
   damageDuration: 0.75
   damageFadeSpeed: 1.5
-  healOverlay: {fileID: 0}
-  healDuration: 0.75
-  healFadeSpeed: 1.5
 --- !u!1 &2921725263252164690
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +241,7 @@ MonoBehaviour:
   projectileGO: {fileID: 5876966904170540126, guid: bb3775d5ea004b94fa3fb4ab98e14f92, type: 3}
   projectileForce: 500
   projectileUpForce: 50
+  shootInterval: 1
 --- !u!1 &5107107885376062390
 GameObject:
   m_ObjectHideFlags: 0
