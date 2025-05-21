@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerMotor : MonoBehaviour
 {
@@ -30,8 +31,7 @@ public class PlayerMotor : MonoBehaviour
     {
         isGrounded = controller.isGrounded;
 
-        //plays foot steps
-        HandleFootsteps();
+
     }
 
     //get inputs from InputManager.cs and apply them to character controller.
@@ -50,12 +50,14 @@ public class PlayerMotor : MonoBehaviour
         }
         controller.Move(playerVelocity * Time.deltaTime);
 
+        HandleFootsteps(input);
+
     }
 
-    private void HandleFootsteps()
+    private void HandleFootsteps(Vector2 input)
     {
         if(!controller.isGrounded) return;
-        if(playerVelocity == Vector3.zero) return;
+        if(input == Vector2.zero) return;
 
         footstepTimer -= Time.deltaTime;
 
@@ -65,7 +67,17 @@ public class PlayerMotor : MonoBehaviour
             {
                 switch(hit.collider.tag)
                 {
+                    case "Footsteps/Sand":
+                        footstepAudioSource.PlayOneShot(sandClips[Random.Range(0, sandClips.Length-1)]);
+                        break;
+                    case "Footsteps/Rock":
+                        footstepAudioSource.PlayOneShot(stoneClips[Random.Range(0, stoneClips.Length - 1)]);
+                        break;
+                    default:
+                        footstepAudioSource.PlayOneShot(stoneClips[Random.Range(0, stoneClips.Length - 1)]);
+                        break;
                 }
+                footstepTimer = baseStepSpeed;
             }
         }
     }

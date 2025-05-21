@@ -9,6 +9,8 @@ TagManager:
   - OnState
   - OffState
   - Enemy
+  - Footsteps/Sand
+  - Footsteps/Rock
   layers:
   - Default
   - TransparentFX
