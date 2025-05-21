@@ -30,6 +30,7 @@ public class MenuManager : MonoBehaviour
     private bool credits;
     private bool levelSelect;
 
+
     private void Start()
     {
         //makes sure game time is running at start of level
@@ -38,6 +39,7 @@ public class MenuManager : MonoBehaviour
         else
             Time.timeScale = 1;
     }
+
 
     public void StartLevel1()
     {
@@ -69,24 +71,35 @@ public class MenuManager : MonoBehaviour
 
     public void PauseGame()
     {
-        //unlock cursor
-        UnityEngine.Cursor.lockState = CursorLockMode.None;
-        UnityEngine.Cursor.visible = true;
+
 
         if (!gamePaused)
         {
+            //unlock cursor
+            UnityEngine.Cursor.lockState = CursorLockMode.None;
+            UnityEngine.Cursor.visible = true;
+
             gamePaused = true;
             pauseMenu.SetActive(true);
-            playerUI.SetActive(false);
+            //playerUI.SetActive(false);
             Time.timeScale = 0;
         }
         else
         {
+            //lock cursor to cam
+            UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+            UnityEngine.Cursor.visible = false;
+
             gamePaused = false;
             pauseMenu.SetActive(false);
-            playerUI.SetActive(true);
+            //playerUI.SetActive(true);
             Time.timeScale = 1;
         }
+    }
+
+    public void RestartLevel()
+    {
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
     }
 
     public void LevelSelectTrans()

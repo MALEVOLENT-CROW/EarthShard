@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8620856250798671516}
   - component: {fileID: 1919638387335403981}
   - component: {fileID: 3967877911686439084}
+  - component: {fileID: 5084484482542086544}
   m_Layer: 13
   m_Name: Player
   m_TagString: Player
@@ -146,6 +147,19 @@ MonoBehaviour:
   damageOverlay: {fileID: 0}
   damageDuration: 0.75
   damageFadeSpeed: 1.5
+--- !u!114 &5084484482542086544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781268425836621919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb08dfd1ae03f64480808de9b1a190c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuManager: {fileID: 0}
 --- !u!1 &2921725263252164690
 GameObject:
   m_ObjectHideFlags: 0

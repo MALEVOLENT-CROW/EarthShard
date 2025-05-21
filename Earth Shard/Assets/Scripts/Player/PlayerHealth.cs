@@ -20,6 +20,13 @@ public class PlayerHealth : MonoBehaviour
     private float timeSinceLastDmg;
     private float second;
 
+    //isdead with getter
+    private bool isDead = false;
+    public bool IsDead
+    {
+        get { return isDead; }
+    }
+
     [Header("Menu manager")]
     [SerializeField]
     private MenuManager menuManager;
@@ -46,6 +53,7 @@ public class PlayerHealth : MonoBehaviour
     private float healDurationTimer;
     */
 
+
     void Start()
     {
         health = maxHealth;
@@ -66,6 +74,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("dead");
             Die();
+            isDead = true;
         }
 
         /*
