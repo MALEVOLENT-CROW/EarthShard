@@ -1705,6 +1705,10 @@ PrefabInstance:
       value: SM_Env_Sand_02 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1725305887934348, guid: 8b5bdd6fdbfdfd349a1a7d2fba49005a, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Sand
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725305887934348, guid: 8b5bdd6fdbfdfd349a1a7d2fba49005a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2366,6 +2370,10 @@ PrefabInstance:
     - target: {fileID: 1248123739678356, guid: 5b293ff6dcdbd414aacb5e093efa571e, type: 3}
       propertyPath: m_Name
       value: SM_Env_Sand_03 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1248123739678356, guid: 5b293ff6dcdbd414aacb5e093efa571e, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Sand
       objectReference: {fileID: 0}
     - target: {fileID: 1248123739678356, guid: 5b293ff6dcdbd414aacb5e093efa571e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5631,6 +5639,10 @@ PrefabInstance:
       value: SM_Env_Sand_02 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1725305887934348, guid: 8b5bdd6fdbfdfd349a1a7d2fba49005a, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Sand
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725305887934348, guid: 8b5bdd6fdbfdfd349a1a7d2fba49005a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -7506,6 +7518,10 @@ PrefabInstance:
       value: SM_Env_Sand_03 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1248123739678356, guid: 5b293ff6dcdbd414aacb5e093efa571e, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Sand
+      objectReference: {fileID: 0}
+    - target: {fileID: 1248123739678356, guid: 5b293ff6dcdbd414aacb5e093efa571e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -8059,6 +8075,10 @@ PrefabInstance:
     - target: {fileID: 1248123739678356, guid: 5b293ff6dcdbd414aacb5e093efa571e, type: 3}
       propertyPath: m_Name
       value: SM_Env_Sand_03 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1248123739678356, guid: 5b293ff6dcdbd414aacb5e093efa571e, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Sand
       objectReference: {fileID: 0}
     - target: {fileID: 1248123739678356, guid: 5b293ff6dcdbd414aacb5e093efa571e, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10384,6 +10404,10 @@ PrefabInstance:
     - target: {fileID: 1532863056973382, guid: 5e57d3a81b85f404a938b189dd29e869, type: 3}
       propertyPath: m_Name
       value: SM_Env_Sand_05 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532863056973382, guid: 5e57d3a81b85f404a938b189dd29e869, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Sand
       objectReference: {fileID: 0}
     - target: {fileID: 1532863056973382, guid: 5e57d3a81b85f404a938b189dd29e869, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13707,6 +13731,10 @@ PrefabInstance:
       value: SM_Env_Sand_03 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1248123739678356, guid: 5b293ff6dcdbd414aacb5e093efa571e, type: 3}
+      propertyPath: m_TagString
+      value: Footsteps/Sand
+      objectReference: {fileID: 0}
+    - target: {fileID: 1248123739678356, guid: 5b293ff6dcdbd414aacb5e093efa571e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -15758,7 +15786,7 @@ GameObject:
   - component: {fileID: 1773121714}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Footsteps/Sand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19026,12 +19054,12 @@ SceneRoots:
   - {fileID: 746064252}
   - {fileID: 1873063453}
   - {fileID: 1227146890}
+  - {fileID: 1244059967}
   - {fileID: 1190314799}
   - {fileID: 1608675349}
   - {fileID: 1176004666}
   - {fileID: 360425562}
   - {fileID: 1246055833}
-  - {fileID: 1244059967}
   - {fileID: 948615142}
   - {fileID: 1592238580}
   - {fileID: 1598678003}

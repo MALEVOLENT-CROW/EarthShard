@@ -21,6 +21,9 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField] private AudioClip[] stoneClips = default;
     private float footstepTimer = 0;
 
+    //jump params
+    [SerializeField] private AudioClip[] jumpClips = default;
+
     void Start()
     {
         playerTransform = GetComponent<Transform>();
@@ -84,6 +87,7 @@ public class PlayerMotor : MonoBehaviour
 
     public void Jump()
     {
+        footstepAudioSource.PlayOneShot(jumpClips[Random.Range(0, jumpClips.Length - 1)]);
         if(isGrounded)
         {
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -jumpHeight * gravity);
