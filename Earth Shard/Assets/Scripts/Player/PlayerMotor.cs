@@ -11,14 +11,27 @@ public class PlayerMotor : MonoBehaviour
     public float gravity = -9.8f;
     public float jumpHeight = 3.0f;
 
+    private Transform playerTransform;
+
+    [Header("footstep params")]
+    [SerializeField] private float baseStepSpeed = 0.5f;
+    [SerializeField] private AudioSource footstepAudioSource = default;
+    [SerializeField] private AudioClip[] sandClips = default;
+    [SerializeField] private AudioClip[] stoneClips = default;
+    private float footstepTimer = 0;
+
     void Start()
     {
+        playerTransform = GetComponent<Transform>();
         controller = GetComponent<CharacterController>();
     }
 
     void Update()
     {
         isGrounded = controller.isGrounded;
+
+        //plays foot steps
+        HandleFootsteps();
     }
 
     //get inputs from InputManager.cs and apply them to character controller.
@@ -37,6 +50,24 @@ public class PlayerMotor : MonoBehaviour
         }
         controller.Move(playerVelocity * Time.deltaTime);
 
+    }
+
+    private void HandleFootsteps()
+    {
+        if(!controller.isGrounded) return;
+        if(playerVelocity == Vector3.zero) return;
+
+        footstepTimer -= Time.deltaTime;
+
+        if(footstepTimer <= 0)
+        {
+            if(Physics.Raycast(playerTransform.position, Vector3.down, out RaycastHit hit, 3))
+            {
+                switch(hit.collider.tag)
+                {
+                }
+            }
+        }
     }
 
     public void Jump()
