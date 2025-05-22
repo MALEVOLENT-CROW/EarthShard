@@ -32656,17 +32656,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwitchBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 3717275214806654343, guid: 398c90da6fd4c794695778d381f5902f, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3807958016099036295, guid: 398c90da6fd4c794695778d381f5902f, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1630642416}
+    - target: {fileID: 4230491686193568913, guid: 398c90da6fd4c794695778d381f5902f, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472553238459673594, guid: 398c90da6fd4c794695778d381f5902f, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983010309512013383, guid: 398c90da6fd4c794695778d381f5902f, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6375103614720576986, guid: 398c90da6fd4c794695778d381f5902f, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6862684329343254041, guid: 398c90da6fd4c794695778d381f5902f, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1630642416}
     - target: {fileID: 6862684329343254041, guid: 398c90da6fd4c794695778d381f5902f, type: 3}
       propertyPath: m_VersionIndex
-      value: 1146
+      value: 1149
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580328532080709078, guid: 398c90da6fd4c794695778d381f5902f, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8478846720652716813, guid: 398c90da6fd4c794695778d381f5902f, type: 3}
       propertyPath: door
