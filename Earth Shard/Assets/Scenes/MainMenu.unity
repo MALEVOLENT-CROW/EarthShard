@@ -2262,7 +2262,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -18.569824, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2980,7 +2980,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 3a52dcc031baa154ea2ba420f3a6667f, type: 3}
+  m_Texture: {fileID: 2800000, guid: 77fde2ee3e1b7c74786efc25d63e9af5, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
