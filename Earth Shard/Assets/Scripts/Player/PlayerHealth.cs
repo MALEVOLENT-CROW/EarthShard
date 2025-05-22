@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
     public float passiveHealAmount = 10;
 
     //private fields
-    [SerializeField]private float health;
+    [SerializeField] private float health;
     private float timeSinceLastDmg;
     private float second;
 
@@ -91,6 +91,14 @@ public class PlayerHealth : MonoBehaviour
             }
         }*/
 
+        //updates time since last damage was taken
+        timeSinceLastDmg += Time.deltaTime;
+        //starts passive heal
+        if(health < maxHealth && timeSinceLastDmg >= passiveHealInterval)
+        {
+            PassiveHeal(passiveHealAmount);
+        }
+
         //dmg overlay
         if(damageOverlay.color.a > 0)
         {
@@ -105,15 +113,6 @@ public class PlayerHealth : MonoBehaviour
                 damageOverlay.color = new Color(damageOverlay.color.r, damageOverlay.color.g, damageOverlay.color.b, tempAplhaDmg);
             }
         }
-
-        //updates time since last damage was taken
-        timeSinceLastDmg += Time.deltaTime;
-        //starts passive heal
-        if(health < maxHealth && timeSinceLastDmg >= passiveHealInterval)
-        {
-            PassiveHeal(passiveHealAmount);
-        }
-
     }
 
     public void TakeDamage(float damage)

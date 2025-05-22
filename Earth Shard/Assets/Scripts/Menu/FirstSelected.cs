@@ -11,7 +11,7 @@ public class FirstSelected : MonoBehaviour
 
     private void OnEnable()
     {
-        _eventSystem.SetSelectedGameObject(_firstSelectedObj);
+            _eventSystem.SetSelectedGameObject(_firstSelectedObj);        
     }
 
 }
