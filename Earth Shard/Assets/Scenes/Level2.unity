@@ -88174,6 +88174,7 @@ GameObject:
   - component: {fileID: 1703830802105183291}
   - component: {fileID: 1703830802104128625}
   - component: {fileID: 1703830802106483634}
+  - component: {fileID: 1703830802106483635}
   m_Layer: 0
   m_Name: EndDoor
   m_TagString: Untagged
@@ -88217,6 +88218,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &1703830802106483635
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703830802106411547}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 1.1368686e-12, z: 5.0000024}
+  m_Center: {x: -2.5, y: -5.684343e-13, z: -2.5000012}
 --- !u!1001 &3247110058587785771
 PrefabInstance:
   m_ObjectHideFlags: 0
