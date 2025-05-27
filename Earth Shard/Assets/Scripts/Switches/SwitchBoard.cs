@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//this script enabales a light for 1 of 3 switches and when all switches are lit it will open a door.
 public class SwitchBoard : MonoBehaviour
 {
     //switches
@@ -52,10 +53,12 @@ public class SwitchBoard : MonoBehaviour
             onStateGem3.SetActive(true);
         }
 
+        //all switches active
         if ((switch1.active == true && switch2.active == true && switch3.active == true) && allActive == false)
         {
             allActive = true;
 
+            //opens door if all active
             if(door != null)
             {
                 door.SetBool("IsOpen", allActive);

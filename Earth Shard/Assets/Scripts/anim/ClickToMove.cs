@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
+//unused ai testing script
 [RequireComponent(typeof(NavMeshAgent))]
 public class ClickToMove : MonoBehaviour
 {

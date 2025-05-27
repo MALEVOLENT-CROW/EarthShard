@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+//controls the player health system.
 public class PlayerHealth : MonoBehaviour
 {
     //Hidden public fields
@@ -56,6 +57,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
+        //sets health to max health
         health = maxHealth;
         damageOverlay.color = new Color(damageOverlay.color.r, damageOverlay.color.g, damageOverlay.color.b, 0);
         //healOverlay.color = new Color(healOverlay.color.r, healOverlay.color.g, healOverlay.color.b, 0);
@@ -64,12 +66,15 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //sets full health bool
         if(health == maxHealth)
             healthFull = true;
         else healthFull = false;
 
+        //clamps health to max health.
         health = Mathf.Clamp(health, 0, maxHealth);
 
+        //triggers player death.
         if(health <= 0)
         {
             Debug.Log("dead");
@@ -77,6 +82,7 @@ public class PlayerHealth : MonoBehaviour
             isDead = true;
         }
 
+        //old heal overlay code. unused
         /*
         //heal overlay
         if(healOverlay.color.a > 0)
@@ -115,6 +121,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    //applys damage to player
     public void TakeDamage(float damage)
     {
         health -= damage;
@@ -124,6 +131,7 @@ public class PlayerHealth : MonoBehaviour
         timeSinceLastDmg = 0;
     }
 
+    //applys health to player
     public void HealHealth(float heal)
     {
         health += heal;
@@ -131,6 +139,7 @@ public class PlayerHealth : MonoBehaviour
         //healOverlay.color = new Color(healOverlay.color.r, healOverlay.color.g, healOverlay.color.b, 1);
     }
 
+    //passively heals player over time.
     private void PassiveHeal(float heal)
     {
         second += Time.deltaTime;
@@ -141,6 +150,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    //kills the player and triggers death screens
     public void Die()
     {
         playerUI.SetActive(false);

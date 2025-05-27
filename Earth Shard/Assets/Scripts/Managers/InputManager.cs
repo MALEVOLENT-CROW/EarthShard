@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+//manages the inputs of the player for both keybaord and mouse and controller
 public class InputManager : MonoBehaviour
 {
     //fields
@@ -36,6 +37,7 @@ public class InputManager : MonoBehaviour
     }
     private void LateUpdate()
     {
+        //processes the player looking
         look.ProcessLook(player.Look.ReadValue<Vector2>());
     }
 

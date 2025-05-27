@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelTransition : MonoBehaviour
 {
+    //collider trigger that loads the next level when collided with.
     [Header("put name of next level")]
     [SerializeField] private string level = "MainMenu";
 

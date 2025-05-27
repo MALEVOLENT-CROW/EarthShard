@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
+    //very simple script that kill the player when collided with.
     private void OnTriggerEnter(Collider other)
     {
         Transform hitTransform = other.transform;

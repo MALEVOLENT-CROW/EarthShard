@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+//controls player movement
 public class PlayerMotor : MonoBehaviour
 {
     private CharacterController controller;
@@ -57,6 +58,7 @@ public class PlayerMotor : MonoBehaviour
 
     }
 
+    //handles when and what footsteps too play by casting a ray and using a timer.
     private void HandleFootsteps(Vector2 input)
     {
         if(!controller.isGrounded) return;
@@ -85,6 +87,7 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
+    //controls jumping and plays audio when jumping
     public void Jump()
     {
         footstepAudioSource.PlayOneShot(jumpClips[Random.Range(0, jumpClips.Length - 1)]);

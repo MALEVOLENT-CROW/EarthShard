@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//attack state for enemy AI
+//this state causes the enemy to start attacking the player and throwing rocks. the enemy will move in a random radius to make them harder too hit
 public class AttackState : BaseState
 {
     private float moveTimer;

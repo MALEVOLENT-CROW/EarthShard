@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RockProjectile : MonoBehaviour
 {
+
+    //fields
     private Transform rockPos;
     [SerializeField] private Transform throwerPos;
     [SerializeField] private GameObject impactEffect;
@@ -19,8 +21,10 @@ public class RockProjectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //gets position of thrower
         throwerPos = GameObject.FindWithTag("Thrower").GetComponent<Transform>();
 
+        //gets components on obj
         rockPos = GetComponent<Transform>();
         rockCol = gameObject.GetComponent<MeshCollider>();
         rb = gameObject.GetComponent<Rigidbody>();
@@ -28,6 +32,7 @@ public class RockProjectile : MonoBehaviour
 
     private void LateUpdate()
     {
+        //checks if rock is held
         if(held)
         {
             HoldRock();
@@ -35,6 +40,7 @@ public class RockProjectile : MonoBehaviour
         else { rockCol.enabled = true; rb.useGravity = true; }
     }
 
+    //function disables gravity and collisions when rock is held
     private void HoldRock()
     {
         rockCol.enabled = false;
@@ -43,6 +49,7 @@ public class RockProjectile : MonoBehaviour
         rockPos.rotation = throwerPos.rotation;
     }
 
+    //destroys rock on collision and plays a sound and particle. damages enemy if the tag of the collision is an enemy.
     private void OnCollisionEnter(Collision collision)
     {
         if(!held)

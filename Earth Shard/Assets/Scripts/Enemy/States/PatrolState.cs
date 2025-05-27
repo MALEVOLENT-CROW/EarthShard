@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//patrol state for enemy ai
+//patrol state sets the enemy to follow a path, if the enemy spots the player it enters the attack state
 public class PatrolState : BaseState
 {
     //track which waypoint we are targeting currently

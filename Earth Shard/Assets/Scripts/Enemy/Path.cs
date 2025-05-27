@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+
+//this controls the enemy paths. with extra inspector visual stuff to make understanding the enemy paths easier.
 public class Path : MonoBehaviour
 {
 

@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 
+//ability that raises player above ground
 public class GroundRaise : MonoBehaviour
 {
     //fields 

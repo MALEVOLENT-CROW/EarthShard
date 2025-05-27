@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Animator))]
+
+//controls the enemy animations, this script was from unity.
 public class LocomotionSimpleAgent : MonoBehaviour
 {
     Animator anim;

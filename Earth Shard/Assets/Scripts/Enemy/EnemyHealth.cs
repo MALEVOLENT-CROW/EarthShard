@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//subclass of targer for enemy health.
 public class EnemyHealth : Target
 {
     public override void TakeDamage(float amount)

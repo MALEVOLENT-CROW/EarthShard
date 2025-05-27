@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//script for allowing the player to pause the game
 public class PlayerPauseGame : MonoBehaviour
 {
     [SerializeField] private MenuManager menuManager;

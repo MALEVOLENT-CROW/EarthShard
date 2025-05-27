@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections;
 
+//unused script that does not work.
 [RequireComponent(typeof(Animator))]
 public class LookAt : MonoBehaviour
 {

@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class MultiImageButton : Button
 {
+    //custom button script that allows the children graphics of a button to be selected other than just the single target graphic.
     protected override void DoStateTransition(SelectionState state, bool instant)
     {
         var targetColor =

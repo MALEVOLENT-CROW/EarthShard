@@ -40,7 +40,7 @@ public class MenuManager : MonoBehaviour
             Time.timeScale = 1;
     }
 
-
+    //load levels through fucntions for buttons
     public void StartLevel1()
     {
         SceneManager.LoadScene("Level1");
@@ -69,6 +69,7 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    //pauses the game and turns on pause menu.
     public void PauseGame()
     {
 
@@ -97,11 +98,14 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    //reloads current level
     public void RestartLevel()
     {
         Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
     }
 
+
+    //these control the camera in the main menu and move it too the selected menu parts.
     public void LevelSelectTrans()
     {
         levelSelect = !levelSelect;

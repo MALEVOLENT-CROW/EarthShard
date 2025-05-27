@@ -1,3 +1,4 @@
+//base state class for the enemy states
 public abstract class BaseState
 {
     public Enemy enemy;

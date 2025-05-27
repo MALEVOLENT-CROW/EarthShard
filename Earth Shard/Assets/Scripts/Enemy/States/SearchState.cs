@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//search state for enemy AI
+//moves to players last seen position then moves around in a area looking for them before returning to patrol state
 public class SearchState : BaseState
 {
     private float searchTimer;

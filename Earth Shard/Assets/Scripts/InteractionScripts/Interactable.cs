@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//standard interactable class
 public abstract class Interactable : MonoBehaviour
 {
     public bool useEvents; //add or remove InteractionEvent.cs to this obj.

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//rock throw ability script
 public class RockThrow : MonoBehaviour
 {
     private InputManager inputManager;
@@ -26,6 +27,7 @@ public class RockThrow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //get components
         inputManager = GameObject.FindWithTag("Player").GetComponent<InputManager>();
 
         rockThrower = GetComponent<Transform>();
@@ -36,20 +38,24 @@ public class RockThrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //cooldown for spawning rock
         seconds += Time.deltaTime;
 
+        //spawns the rock
         if (spawned == false && inputManager.player.ShootAlt.triggered && seconds > shootInterval)
         {
             spawnRock();
             seconds = 0;
         }
 
+        //shoots the rock
         if (spawned == true && inputManager.player.Shoot.triggered)
         {
             shootRock();
         }
     }
 
+    //spawns rock at correct posistion
     private void spawnRock()
     {
         if (projectileGO != null && rockThrower != null)

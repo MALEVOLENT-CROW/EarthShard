@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//unused interaction script.
 public class PlayerInteract : MonoBehaviour
 {
     private CinemachineVirtualCamera cam;

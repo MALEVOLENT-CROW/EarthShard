@@ -9,6 +9,7 @@ public class AnimationToggles : MonoBehaviour
     [SerializeField] private GameObject levelSelect;
     [SerializeField] private GameObject credits;
 
+    //toggles the different menus when the animation events are called in the animator
     public void ToggleMainMenu()
     {
         mainMenu.SetActive(!mainMenu.activeSelf);

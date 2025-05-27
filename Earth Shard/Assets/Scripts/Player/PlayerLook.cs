@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//controls the player looking
 public class PlayerLook : MonoBehaviour
 {
     public CinemachineVirtualCamera cam;

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//switches the current active ability and changes UI element
 public class AbilitySwitcher : MonoBehaviour
 {
     private InputManager inputManager;

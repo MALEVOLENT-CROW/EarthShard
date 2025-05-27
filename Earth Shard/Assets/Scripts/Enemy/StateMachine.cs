@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//scripts handles the enemy AI states
 public class StateMachine : MonoBehaviour
 {
     public BaseState activeState;
