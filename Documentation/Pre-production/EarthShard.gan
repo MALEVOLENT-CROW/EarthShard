@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-04-17" view-index="0" gantt-divider-location="380" resource-divider-location="300" version="3.3.3309" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-04-13" view-index="0" gantt-divider-location="366" resource-divider-location="300" version="3.3.3316" locale="en_GB">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Name" width="206" order="0"/>
-        <field id="tpd4" name="Begin date" width="79" order="1"/>
-        <field id="tpd5" name="End date" width="79" order="2"/>
+        <field id="tpd3" name="Name" width="198" order="0"/>
+        <field id="tpd4" name="Begin date" width="76" order="1"/>
+        <field id="tpd5" name="End date" width="76" order="2"/>
         <field id="tpd15" name="Notes" width="20" order="3"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="filter.dueTodayTasks" value="false"/>
@@ -305,7 +305,10 @@ update: moved too next phase due too time constraints]]></notes>
             <depend id="46" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="46" uid="50fd01d4d8d448d3ad8d2bffc65e28aa" name="Iteration 3" color="#00ff00" meeting="false" start="2025-05-12" duration="20" complete="89" expand="true">
-            <notes><![CDATA[this phase will be dedicated too polishing features and finishing remaining documentation and the evaluation. at the current moment this part of the project is uncertain on what will be needed to polish. this phase is also dedicated to adding anything that may have been overlooked or needs a rework.]]></notes>
+            <notes><![CDATA[this phase will be dedicated too polishing features and finishing remaining documentation and the evaluation. at the current moment this part of the project is uncertain on what will be needed to polish. this phase is also dedicated to adding anything that may have been overlooked or needs a rework.
+
+Update:
+level 3 and level 4 have been moved to this phase, issues with enemy AI and animations delayed there development. ]]></notes>
             <depend id="48" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="34" uid="433c8d540f7d4d0cb9ae60d42eb54d18" name="GDD Submission" color="#ff0033" meeting="true" start="2025-05-16" duration="0" complete="0" expand="true"/>
